@@ -1,5 +1,6 @@
 import React, { FC } from "react";
+import StyledApp from "./App.style";
 
-const App: FC = () => <div>App</div>;
+const App: FC = () => <StyledApp>App</StyledApp>;
 
 export default App;
