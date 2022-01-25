@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Default 1`] = `
+<button
+  className="sc-bdvvtL bzcYqn"
+  onClick={[Function]}
+>
+  按鈕
+</button>
+`;
+
+exports[`Storyshots Button Primary 1`] = `
+<button
+  className="sc-bdvvtL bzcYqn"
+  onClick={[Function]}
+>
+  按鈕
+</button>
+`;
+
+exports[`Storyshots Button Primary Outline 1`] = `
+<button
+  className="sc-bdvvtL gMGffA"
+  onClick={[Function]}
+>
+  按鈕
+</button>
+`;
+
+exports[`Storyshots Button Secondary 1`] = `
+<button
+  className="sc-bdvvtL Fiinj"
+  onClick={[Function]}
+>
+  按鈕
+</button>
+`;
+
+exports[`Storyshots Button Secondary Outline 1`] = `
+<button
+  className="sc-bdvvtL ixuVNY"
+  onClick={[Function]}
+>
+  按鈕
+</button>
+`;
