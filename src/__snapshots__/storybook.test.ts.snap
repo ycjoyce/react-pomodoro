@@ -44,3 +44,9 @@ exports[`Storyshots Button Secondary Outline 1`] = `
   按鈕
 </button>
 `;
+
+exports[`Storyshots Label Default 1`] = `
+<label>
+  TEST
+</label>
+`;
