@@ -2,21 +2,28 @@ import React, { FC } from "react";
 import StyledButton from "./Button.style";
 
 export interface ButtonProps {
-  label?: string;
+  children?: string;
   primary?: boolean;
   outline?: boolean;
+  large?: boolean;
   onClick?(): void;
 }
 
 const Button: FC<ButtonProps> = ({
-  label = "Button",
+  children = "Button",
   primary = true,
   outline = false,
+  large = false,
   onClick = () => {},
 }) => {
   return (
-    <StyledButton primary={primary} outline={outline} onClick={onClick}>
-      {label}
+    <StyledButton
+      data-large={large}
+      primary={primary}
+      outline={outline}
+      onClick={onClick}
+    >
+      {children.trim().toUpperCase()}
     </StyledButton>
   );
 };

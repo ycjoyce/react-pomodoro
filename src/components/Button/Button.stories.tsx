@@ -7,7 +7,7 @@ export default {
 };
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-const defaultArgs = { label: "按鈕" };
+const defaultArgs = { children: "按鈕" };
 
 export const Default = Template.bind({});
 Default.args = {

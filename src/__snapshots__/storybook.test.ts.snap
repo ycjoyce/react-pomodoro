@@ -1,8 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots AudioButton Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <button
+    className="sc-bdvvtL fZQeXN"
+    onClick={[Function]}
+  />
+  <audio
+    autoPlay={false}
+    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3"
+  />
+</div>
+`;
+
+exports[`Storyshots AudioButton Playing 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <button
+    className="sc-bdvvtL fZQeXN"
+    onClick={[Function]}
+  />
+  <audio
+    autoPlay={false}
+    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3"
+  />
+</div>
+`;
+
 exports[`Storyshots Button Default 1`] = `
 <button
-  className="sc-bdvvtL bzcYqn"
+  className="sc-dkPtRN doeNQV"
+  data-large={false}
   onClick={[Function]}
 >
   按鈕
@@ -11,7 +52,8 @@ exports[`Storyshots Button Default 1`] = `
 
 exports[`Storyshots Button Primary 1`] = `
 <button
-  className="sc-bdvvtL bzcYqn"
+  className="sc-dkPtRN doeNQV"
+  data-large={false}
   onClick={[Function]}
 >
   按鈕
@@ -20,7 +62,8 @@ exports[`Storyshots Button Primary 1`] = `
 
 exports[`Storyshots Button Primary Outline 1`] = `
 <button
-  className="sc-bdvvtL gMGffA"
+  className="sc-dkPtRN erzFDq"
+  data-large={false}
   onClick={[Function]}
 >
   按鈕
@@ -29,7 +72,8 @@ exports[`Storyshots Button Primary Outline 1`] = `
 
 exports[`Storyshots Button Secondary 1`] = `
 <button
-  className="sc-bdvvtL Fiinj"
+  className="sc-dkPtRN bvmbqx"
+  data-large={false}
   onClick={[Function]}
 >
   按鈕
@@ -38,15 +82,1598 @@ exports[`Storyshots Button Secondary 1`] = `
 
 exports[`Storyshots Button Secondary Outline 1`] = `
 <button
-  className="sc-bdvvtL ixuVNY"
+  className="sc-dkPtRN fPUQHW"
+  data-large={false}
   onClick={[Function]}
 >
   按鈕
 </button>
 `;
 
+exports[`Storyshots CountPanel Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="sc-iCfMLu ebQvCh"
+  >
+    <div
+      className="sc-eCImPb kitwYs"
+    >
+      <p
+        className="sc-jRQBWg dTZyFv"
+      >
+        0
+      </p>
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        TODAY
+      </p>
+    </div>
+    <div
+      className="sc-eCImPb kitwYs"
+    >
+      <p
+        className="sc-jRQBWg dTZyFv"
+      >
+        0
+      </p>
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        2/13 - 2/19
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CountPanelItem Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="sc-eCImPb kitwYs"
+  >
+    <p
+      className="sc-jRQBWg dTZyFv"
+    >
+      0
+    </p>
+    <p
+      className="sc-gKclnd kAkzlB"
+    >
+      TODAY
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DateCountItem Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+>
+  <div
+    className="sc-iqseJM jlfgHR"
+  >
+    <div
+      className="sc-pVTFL gwDOnY"
+    >
+      <p
+        className="sc-jrQzAO bzluKI"
+      >
+        5
+      </p>
+      <div
+        className="sc-furwcr iZQuQD"
+      />
+      <div
+        className="sc-furwcr iZQuQD"
+      />
+      <div
+        className="sc-furwcr iZQuQD"
+      />
+      <div
+        className="sc-furwcr iZQuQD"
+      />
+      <div
+        className="sc-furwcr iZQuQD"
+      />
+    </div>
+    <div
+      className="sc-kDTinF"
+    >
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        2/13
+      </p>
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        SUN
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Label Default 1`] = `
-<label>
+<label
+  className="sc-crHmcD jkPnnN"
+>
   TEST
 </label>
+`;
+
+exports[`Storyshots Panel Ringtone 1`] = `
+<div
+  className="sc-fotOHu fbRoMX"
+>
+  <div
+    className="sc-bqiRlB drhRSe"
+  >
+    <button
+      className="sc-egiyK bMjboy"
+      onClick={[Function]}
+    >
+      WORK
+    </button>
+    <button
+      className="sc-egiyK qrRZZ"
+      onClick={[Function]}
+    >
+      BREAK
+    </button>
+  </div>
+  <ul
+    className="sc-hBUSln fFpKsF"
+  >
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-kfPuZi kdxeZQ"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            test1
+          </p>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-bdvvtL fZQeXN"
+            onClick={[Function]}
+          />
+          <audio
+            autoPlay={false}
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          />
+        </div>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-kfPuZi kdxeZQ"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            test2
+          </p>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-bdvvtL fZQeXN"
+            onClick={[Function]}
+          />
+          <audio
+            autoPlay={false}
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+          />
+        </div>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-kfPuZi kdxeZQ"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+          >
+            test3
+          </p>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-bdvvtL fZQeXN"
+            onClick={[Function]}
+          />
+          <audio
+            autoPlay={false}
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+          />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Panel Task 1`] = `
+<div
+  className="sc-fotOHu fbRoMX"
+>
+  <div
+    className="sc-bqiRlB drhRSe"
+  >
+    <button
+      className="sc-egiyK bMjboy"
+      onClick={[Function]}
+    >
+      TO DO
+    </button>
+    <button
+      className="sc-egiyK qrRZZ"
+      onClick={[Function]}
+    >
+      DONE
+    </button>
+  </div>
+  <ul
+    className="sc-hBUSln fFpKsF"
+  >
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-iJKOTD fZkTzy"
+      >
+        <div
+          className="sc-ieecCq bTHOdT"
+        >
+          <div
+            className="sc-dJjYzT jcVwOS"
+          >
+            <div>
+              <p
+                className="sc-hGPBjI hsCNlP"
+              >
+                todo 1
+              </p>
+              <div
+                className="sc-bkkeKt cBmWlU"
+              >
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-dlVxhl bRYPns"
+          >
+            <button
+              className="sc-fKVqWL hMRyri"
+              onClick={[Function]}
+            >
+              ...
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-iJKOTD fZkTzy"
+      >
+        <div
+          className="sc-ieecCq bTHOdT"
+        >
+          <div
+            className="sc-dJjYzT jcVwOS"
+          >
+            <div>
+              <p
+                className="sc-hGPBjI hsCNlP"
+              >
+                todo 2
+              </p>
+              <div
+                className="sc-bkkeKt cBmWlU"
+              >
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-dlVxhl bRYPns"
+          >
+            <button
+              className="sc-fKVqWL hMRyri"
+              onClick={[Function]}
+            >
+              ...
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      className="sc-ksdxgE ceSqbe"
+    >
+      <div
+        className="sc-iJKOTD fZkTzy"
+      >
+        <div
+          className="sc-ieecCq bTHOdT"
+        >
+          <div
+            className="sc-dJjYzT jcVwOS"
+          >
+            <div>
+              <p
+                className="sc-hGPBjI hsCNlP"
+              >
+                todo 3
+              </p>
+              <div
+                className="sc-bkkeKt cBmWlU"
+              >
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+                <div
+                  className="sc-fFeiMQ ivQxNF"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-dlVxhl bRYPns"
+          >
+            <button
+              className="sc-fKVqWL hMRyri"
+              onClick={[Function]}
+            >
+              ...
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots PanelItem Default 1`] = `
+<li
+  className="sc-ksdxgE ceSqbe"
+>
+  <h3>
+    Hello World
+  </h3>
+</li>
+`;
+
+exports[`Storyshots PanelList Default 1`] = `
+<ul
+  className="sc-hBUSln fFpKsF"
+>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    1
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    2
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    3
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Record Completed 1`] = `
+<div
+  className="sc-fFeiMQ bpOYiw"
+/>
+`;
+
+exports[`Storyshots Record Default 1`] = `
+<div
+  className="sc-fFeiMQ ivQxNF"
+/>
+`;
+
+exports[`Storyshots RecordGroup Default 1`] = `
+<div
+  className="sc-bkkeKt cBmWlU"
+>
+  <div
+    className="sc-fFeiMQ ivQxNF"
+  />
+  <div
+    className="sc-fFeiMQ ivQxNF"
+  />
+  <div
+    className="sc-fFeiMQ ivQxNF"
+  />
+  <div
+    className="sc-fFeiMQ ivQxNF"
+  />
+  <div
+    className="sc-fFeiMQ ivQxNF"
+  />
+</div>
+`;
+
+exports[`Storyshots RingtoneItem Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+>
+  <div
+    className="sc-ieecCq bTHOdT"
+  >
+    <div
+      className="sc-dJjYzT jcVwOS"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-kfPuZi kdxeZQ"
+      >
+        <div
+          className="sc-fFeiMQ ivQxNF"
+        />
+      </div>
+      <p
+        className="sc-hGPBjI hsCNlP"
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        test
+      </p>
+    </div>
+    <div
+      className="sc-dlVxhl bRYPns"
+    >
+      <button
+        className="sc-bdvvtL fZQeXN"
+        onClick={[Function]}
+      />
+      <audio
+        autoPlay={false}
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots RingtonePanelList Default 1`] = `
+<ul
+  className="sc-hBUSln fFpKsF"
+>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kfPuZi kdxeZQ"
+        >
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+        </div>
+        <p
+          className="sc-hGPBjI hsCNlP"
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          test1
+        </p>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-bdvvtL fZQeXN"
+          onClick={[Function]}
+        />
+        <audio
+          autoPlay={false}
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        />
+      </div>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kfPuZi kdxeZQ"
+        >
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+        </div>
+        <p
+          className="sc-hGPBjI hsCNlP"
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          test2
+        </p>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-bdvvtL fZQeXN"
+          onClick={[Function]}
+        />
+        <audio
+          autoPlay={false}
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+        />
+      </div>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kfPuZi kdxeZQ"
+        >
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+        </div>
+        <p
+          className="sc-hGPBjI hsCNlP"
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          test3
+        </p>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-bdvvtL fZQeXN"
+          onClick={[Function]}
+        />
+        <audio
+          autoPlay={false}
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+        />
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Tab Active 1`] = `
+<button
+  className="sc-egiyK bMjboy"
+  onClick={[Function]}
+>
+  TEST
+</button>
+`;
+
+exports[`Storyshots Tab Default 1`] = `
+<button
+  className="sc-egiyK qrRZZ"
+  onClick={[Function]}
+>
+  
+</button>
+`;
+
+exports[`Storyshots Tab Wording 1`] = `
+<button
+  className="sc-egiyK qrRZZ"
+  onClick={[Function]}
+>
+  TEST
+</button>
+`;
+
+exports[`Storyshots TaskItem Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-iJKOTD fZkTzy"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+      >
+        <div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+          >
+            test
+          </p>
+          <div
+            className="sc-bkkeKt cBmWlU"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-fKVqWL hMRyri"
+          onClick={[Function]}
+        >
+          ...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItem Done 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-iJKOTD fZkTzy"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+      >
+        <div
+          className="sc-kfPuZi kdxeZQ"
+        >
+          <img
+            alt=""
+            src="complete.svg"
+          />
+        </div>
+        <div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+          >
+            test
+          </p>
+          <div
+            className="sc-bkkeKt cBmWlU"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-fKVqWL hMRyri"
+          onClick={[Function]}
+        >
+          ...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItem Opened 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-iJKOTD fZkTzy"
+  >
+    <div
+      className="sc-ieecCq bTHOdT"
+    >
+      <div
+        className="sc-dJjYzT jcVwOS"
+      >
+        <div>
+          <p
+            className="sc-hGPBjI hsCNlP"
+          >
+            test
+          </p>
+          <div
+            className="sc-bkkeKt cBmWlU"
+          >
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+            <div
+              className="sc-fFeiMQ ivQxNF"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-dlVxhl bRYPns"
+      >
+        <button
+          className="sc-fKVqWL ilFsKv"
+          onClick={[Function]}
+        >
+          ...
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="sc-llYSUQ eAYBfQ"
+    >
+      <div>
+        <label
+          className="sc-crHmcD jkPnnN"
+        >
+          TASK TITLE
+        </label>
+        <input
+          className="sc-bBHxTw gzEbwK"
+          onChange={[Function]}
+          type="text"
+          value="test"
+        />
+      </div>
+      <div>
+        <label
+          className="sc-crHmcD jkPnnN"
+        >
+          ESTIMATED TOMATO
+        </label>
+        <div
+          className="sc-cxpSdN bxXPvn"
+          onClick={[Function]}
+        >
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={1}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={2}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={3}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={4}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={5}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={6}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={7}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={8}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={9}
+          />
+          <button
+            className="sc-iwjdpV hvJHn"
+            data-number={10}
+          />
+        </div>
+      </div>
+      <div
+        className="sc-hKwDye faWgkr"
+      >
+        <button
+          className="sc-dkPtRN bvmbqx"
+          data-large={false}
+          onClick={[Function]}
+        >
+          DELETE
+        </button>
+        <button
+          className="sc-dkPtRN doeNQV"
+          data-large={true}
+          onClick={[Function]}
+        >
+          SAVE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItemOperate/DoneTask Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-llYSUQ eAYBfQ"
+  >
+    <div
+      className="sc-hKwDye faWgkr"
+    >
+      <button
+        className="sc-dkPtRN bvmbqx"
+        data-large={false}
+        onClick={[Function]}
+      >
+        DELETE
+      </button>
+      <button
+        className="sc-dkPtRN doeNQV"
+        data-large={true}
+        onClick={[Function]}
+      >
+        REDO
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-llYSUQ eAYBfQ"
+  >
+    <div>
+      <label
+        className="sc-crHmcD jkPnnN"
+      >
+        TASK TITLE
+      </label>
+      <input
+        className="sc-bBHxTw gzEbwK"
+        onChange={[Function]}
+        type="text"
+        value="test"
+      />
+    </div>
+    <div>
+      <label
+        className="sc-crHmcD jkPnnN"
+      >
+        ESTIMATED TOMATO
+      </label>
+      <div
+        className="sc-cxpSdN bxXPvn"
+        onClick={[Function]}
+      >
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={1}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={2}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={3}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={4}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={5}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={6}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={7}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={8}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={9}
+        />
+        <button
+          className="sc-iwjdpV hvJHn"
+          data-number={10}
+        />
+      </div>
+    </div>
+    <div
+      className="sc-hKwDye faWgkr"
+    >
+      <button
+        className="sc-dkPtRN bvmbqx"
+        data-large={false}
+        onClick={[Function]}
+      >
+        DELETE
+      </button>
+      <button
+        className="sc-dkPtRN doeNQV"
+        data-large={true}
+        onClick={[Function]}
+      >
+        SAVE
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItemTitle Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+>
+  <div
+    className="sc-ieecCq bTHOdT"
+  >
+    <div
+      className="sc-dJjYzT jcVwOS"
+    >
+      <div>
+        <p
+          className="sc-hGPBjI hsCNlP"
+        >
+          test
+        </p>
+        <div
+          className="sc-bkkeKt cBmWlU"
+        >
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dlVxhl bRYPns"
+    >
+      <button
+        className="sc-fKVqWL hMRyri"
+        onClick={[Function]}
+      >
+        ...
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskItemTitle Done 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+>
+  <div
+    className="sc-ieecCq bTHOdT"
+  >
+    <div
+      className="sc-dJjYzT jcVwOS"
+    >
+      <div
+        className="sc-kfPuZi kdxeZQ"
+      >
+        <img
+          alt=""
+          src="complete.svg"
+        />
+      </div>
+      <div>
+        <p
+          className="sc-hGPBjI hsCNlP"
+        >
+          test
+        </p>
+        <div
+          className="sc-bkkeKt cBmWlU"
+        >
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+          <div
+            className="sc-fFeiMQ ivQxNF"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dlVxhl bRYPns"
+    >
+      <button
+        className="sc-fKVqWL hMRyri"
+        onClick={[Function]}
+      >
+        ...
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskPanelList Default 1`] = `
+<ul
+  className="sc-hBUSln fFpKsF"
+>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-iJKOTD fZkTzy"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+        >
+          <div>
+            <p
+              className="sc-hGPBjI hsCNlP"
+            >
+              test1
+            </p>
+            <div
+              className="sc-bkkeKt cBmWlU"
+            >
+              <div
+                className="sc-fFeiMQ bpOYiw"
+              />
+              <div
+                className="sc-fFeiMQ bpOYiw"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-fKVqWL hMRyri"
+            onClick={[Function]}
+          >
+            ...
+          </button>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-iJKOTD fZkTzy"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+        >
+          <div>
+            <p
+              className="sc-hGPBjI hsCNlP"
+            >
+              test2
+            </p>
+            <div
+              className="sc-bkkeKt cBmWlU"
+            >
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-fKVqWL hMRyri"
+            onClick={[Function]}
+          >
+            ...
+          </button>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="sc-ksdxgE ceSqbe"
+  >
+    <div
+      className="sc-iJKOTD fZkTzy"
+    >
+      <div
+        className="sc-ieecCq bTHOdT"
+      >
+        <div
+          className="sc-dJjYzT jcVwOS"
+        >
+          <div>
+            <p
+              className="sc-hGPBjI hsCNlP"
+            >
+              test3
+            </p>
+            <div
+              className="sc-bkkeKt cBmWlU"
+            >
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+              <div
+                className="sc-fFeiMQ ivQxNF"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-dlVxhl bRYPns"
+        >
+          <button
+            className="sc-fKVqWL hMRyri"
+            onClick={[Function]}
+          >
+            ...
+          </button>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots TextInput Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <input
+    className="sc-bBHxTw gzEbwK"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots TextInput Password 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <input
+    className="sc-bBHxTw gzEbwK"
+    onChange={[Function]}
+    type="password"
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots Title Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-giYglK gIIsJS"
+  >
+    <h1
+      className="sc-ezbkAF hoPdoW"
+    >
+      TEST
+    </h1>
+    <hr />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToggleButton Default 1`] = `
+<button
+  className="sc-fKVqWL hMRyri"
+  onClick={[Function]}
+>
+  ...
+</button>
+`;
+
+exports[`Storyshots TomatoButton Active 1`] = `
+<button
+  className="sc-iwjdpV jvOkUj"
+/>
+`;
+
+exports[`Storyshots TomatoButton Default 1`] = `
+<button
+  className="sc-iwjdpV hvJHn"
+/>
+`;
+
+exports[`Storyshots TomatoButtonGroup Default 1`] = `
+<div
+  className="sc-cxpSdN bxXPvn"
+  onClick={[Function]}
+>
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={1}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={2}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={3}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={4}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={5}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={6}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={7}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={8}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={9}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={10}
+  />
+</div>
+`;
+
+exports[`Storyshots TomatoButtonGroup Default Selected Number 1`] = `
+<div
+  className="sc-cxpSdN bxXPvn"
+  onClick={[Function]}
+>
+  <button
+    className="sc-iwjdpV jvOkUj"
+    data-number={1}
+  />
+  <button
+    className="sc-iwjdpV jvOkUj"
+    data-number={2}
+  />
+  <button
+    className="sc-iwjdpV jvOkUj"
+    data-number={3}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={4}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={5}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={6}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={7}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={8}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={9}
+  />
+  <button
+    className="sc-iwjdpV hvJHn"
+    data-number={10}
+  />
+</div>
 `;
