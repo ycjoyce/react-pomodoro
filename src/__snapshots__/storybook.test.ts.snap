@@ -875,6 +875,46 @@ exports[`Storyshots PanelList Default 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Pie Children 1`] = `
+<div
+  className="sc-kLwhqv entxDI"
+  color="#ea5548"
+>
+  <div
+    className="sc-ikJyIC gJzmJF"
+    color="#ea5548"
+  />
+  <div
+    className="sc-jJoQJp cfQDhx"
+  >
+    <p
+      style={
+        Object {
+          "margin": "0",
+        }
+      }
+    >
+      children
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pie Default 1`] = `
+<div
+  className="sc-kLwhqv entxDI"
+  color="#ea5548"
+>
+  <div
+    className="sc-ikJyIC jHNUzx"
+    color="#ea5548"
+  />
+  <div
+    className="sc-jJoQJp cfQDhx"
+  />
+</div>
+`;
+
 exports[`Storyshots Record Completed 1`] = `
 <div
   className="sc-bkkeKt bYaGkw"
@@ -1829,6 +1869,39 @@ exports[`Storyshots TextInput Password 1`] = `
 </div>
 `;
 
+exports[`Storyshots Timer Default 1`] = `
+<div
+  className="sc-hiCibw"
+>
+  00:00
+</div>
+`;
+
+exports[`Storyshots TimerPie Default 1`] = `
+<div
+  className="sc-kLwhqv entxDI"
+  color="#ea5548"
+>
+  <div
+    className="sc-ikJyIC eEdrGT"
+    color="#ea5548"
+  />
+  <div
+    className="sc-jJoQJp cfQDhx"
+  >
+    <div
+      className="sc-gWXbKe jfwFLr"
+    >
+      <div
+        className="sc-hiCibw"
+      >
+        00:50
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Title Default 1`] = `
 <div
   className="sc-gsDKAQ kOwJXi"
@@ -1839,10 +1912,10 @@ exports[`Storyshots Title Default 1`] = `
   }
 >
   <div
-    className="sc-kLwhqv dumHyW"
+    className="sc-cCcXHH bPWxFO"
   >
     <h1
-      className="sc-ikJyIC hQbeNM"
+      className="sc-cidDSM rVYgf"
     >
       TEST
     </h1>
