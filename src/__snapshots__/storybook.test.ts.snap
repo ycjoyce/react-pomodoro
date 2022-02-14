@@ -687,7 +687,7 @@ exports[`Storyshots Panel Task 1`] = `
       className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-giYglK dkUFFj"
+        className="sc-bYoBSM cdoDvO"
       >
         <div
           className="sc-dJjYzT lnZgzo"
@@ -726,7 +726,7 @@ exports[`Storyshots Panel Task 1`] = `
             className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-bBHxTw hqSaxs"
+              className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
               onClick={[Function]}
             >
               ...
@@ -739,7 +739,7 @@ exports[`Storyshots Panel Task 1`] = `
       className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-giYglK dkUFFj"
+        className="sc-bYoBSM cdoDvO"
       >
         <div
           className="sc-dJjYzT lnZgzo"
@@ -778,7 +778,7 @@ exports[`Storyshots Panel Task 1`] = `
             className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-bBHxTw hqSaxs"
+              className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
               onClick={[Function]}
             >
               ...
@@ -791,7 +791,7 @@ exports[`Storyshots Panel Task 1`] = `
       className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-giYglK dkUFFj"
+        className="sc-bYoBSM cdoDvO"
       >
         <div
           className="sc-dJjYzT lnZgzo"
@@ -830,7 +830,7 @@ exports[`Storyshots Panel Task 1`] = `
             className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-bBHxTw hqSaxs"
+              className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
               onClick={[Function]}
             >
               ...
@@ -1124,7 +1124,7 @@ exports[`Storyshots TaskItem Default 1`] = `
   }
 >
   <div
-    className="sc-giYglK dkUFFj"
+    className="sc-bYoBSM cdoDvO"
   >
     <div
       className="sc-dJjYzT lnZgzo"
@@ -1163,7 +1163,7 @@ exports[`Storyshots TaskItem Default 1`] = `
         className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-bBHxTw hqSaxs"
+          className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
           onClick={[Function]}
         >
           ...
@@ -1184,7 +1184,7 @@ exports[`Storyshots TaskItem Done 1`] = `
   }
 >
   <div
-    className="sc-giYglK dkUFFj"
+    className="sc-bYoBSM cdoDvO"
   >
     <div
       className="sc-dJjYzT lnZgzo"
@@ -1231,7 +1231,7 @@ exports[`Storyshots TaskItem Done 1`] = `
         className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-bBHxTw hqSaxs"
+          className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
           onClick={[Function]}
         >
           ...
@@ -1252,7 +1252,7 @@ exports[`Storyshots TaskItem Opened 1`] = `
   }
 >
   <div
-    className="sc-giYglK dkUFFj"
+    className="sc-bYoBSM cdoDvO"
   >
     <div
       className="sc-dJjYzT lnZgzo"
@@ -1291,7 +1291,7 @@ exports[`Storyshots TaskItem Opened 1`] = `
         className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-bBHxTw lhbZhR"
+          className="sc-bBHxTw sc-cxpSdN MxLvP gTRngx"
           onClick={[Function]}
         >
           ...
@@ -1300,7 +1300,7 @@ exports[`Storyshots TaskItem Opened 1`] = `
     </div>
     <hr />
     <div
-      className="sc-iJKOTD jJOMBX"
+      className="sc-ezbkAF hYkXBF"
     >
       <div>
         <label
@@ -1309,7 +1309,7 @@ exports[`Storyshots TaskItem Opened 1`] = `
           TASK TITLE
         </label>
         <input
-          className="sc-iwjdpV fqEKcH"
+          className="sc-llYSUQ eeyNUj"
           onChange={[Function]}
           type="text"
           value="test"
@@ -1322,47 +1322,47 @@ exports[`Storyshots TaskItem Opened 1`] = `
           ESTIMATED TOMATO
         </label>
         <div
-          className="sc-llYSUQ goOiNX"
+          className="sc-giYglK jeobSK"
           onClick={[Function]}
         >
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={1}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={2}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={3}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={4}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={5}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={6}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={7}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={8}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={9}
           />
           <button
-            className="sc-cxpSdN eLqIuL"
+            className="sc-iJKOTD IlfgO"
             data-number={10}
           />
         </div>
@@ -1400,7 +1400,7 @@ exports[`Storyshots TaskItemOperate/DoneTask Default 1`] = `
   }
 >
   <div
-    className="sc-iJKOTD jJOMBX"
+    className="sc-ezbkAF hYkXBF"
   >
     <div
       className="sc-hKwDye faWgkr"
@@ -1434,7 +1434,7 @@ exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
   }
 >
   <div
-    className="sc-iJKOTD jJOMBX"
+    className="sc-ezbkAF hYkXBF"
   >
     <div>
       <label
@@ -1443,7 +1443,7 @@ exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
         TASK TITLE
       </label>
       <input
-        className="sc-iwjdpV fqEKcH"
+        className="sc-llYSUQ eeyNUj"
         onChange={[Function]}
         type="text"
         value="test"
@@ -1456,47 +1456,47 @@ exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
         ESTIMATED TOMATO
       </label>
       <div
-        className="sc-llYSUQ goOiNX"
+        className="sc-giYglK jeobSK"
         onClick={[Function]}
       >
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={1}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={2}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={3}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={4}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={5}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={6}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={7}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={8}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={9}
         />
         <button
-          className="sc-cxpSdN eLqIuL"
+          className="sc-iJKOTD IlfgO"
           data-number={10}
         />
       </div>
@@ -1564,7 +1564,7 @@ exports[`Storyshots TaskItemTitle Default 1`] = `
       className="sc-kfPuZi fKzSUh"
     >
       <button
-        className="sc-bBHxTw hqSaxs"
+        className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
         onClick={[Function]}
       >
         ...
@@ -1623,7 +1623,7 @@ exports[`Storyshots TaskItemTitle Done 1`] = `
       className="sc-kfPuZi fKzSUh"
     >
       <button
-        className="sc-bBHxTw hqSaxs"
+        className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
         onClick={[Function]}
       >
         ...
@@ -1641,7 +1641,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-giYglK dkUFFj"
+      className="sc-bYoBSM cdoDvO"
     >
       <div
         className="sc-dJjYzT lnZgzo"
@@ -1680,7 +1680,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
           className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-bBHxTw hqSaxs"
+            className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
             onClick={[Function]}
           >
             ...
@@ -1693,7 +1693,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-giYglK dkUFFj"
+      className="sc-bYoBSM cdoDvO"
     >
       <div
         className="sc-dJjYzT lnZgzo"
@@ -1735,7 +1735,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
           className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-bBHxTw hqSaxs"
+            className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
             onClick={[Function]}
           >
             ...
@@ -1748,7 +1748,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-giYglK dkUFFj"
+      className="sc-bYoBSM cdoDvO"
     >
       <div
         className="sc-dJjYzT lnZgzo"
@@ -1781,7 +1781,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
           className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-bBHxTw hqSaxs"
+            className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
             onClick={[Function]}
           >
             ...
@@ -1803,7 +1803,7 @@ exports[`Storyshots TextInput Default 1`] = `
   }
 >
   <input
-    className="sc-iwjdpV fqEKcH"
+    className="sc-llYSUQ eeyNUj"
     onChange={[Function]}
     type="text"
     value=""
@@ -1821,7 +1821,7 @@ exports[`Storyshots TextInput Password 1`] = `
   }
 >
   <input
-    className="sc-iwjdpV fqEKcH"
+    className="sc-llYSUQ eeyNUj"
     onChange={[Function]}
     type="password"
     value=""
@@ -1839,10 +1839,10 @@ exports[`Storyshots Title Default 1`] = `
   }
 >
   <div
-    className="sc-ezbkAF kyNxzQ"
+    className="sc-kLwhqv dumHyW"
   >
     <h1
-      className="sc-bYoBSM LOJuH"
+      className="sc-ikJyIC hQbeNM"
     >
       TEST
     </h1>
@@ -1853,68 +1853,95 @@ exports[`Storyshots Title Default 1`] = `
 
 exports[`Storyshots ToggleButton Default 1`] = `
 <button
-  className="sc-bBHxTw hqSaxs"
+  className="sc-bBHxTw sc-cxpSdN MxLvP jUDDxQ"
   onClick={[Function]}
 >
   ...
 </button>
 `;
 
+exports[`Storyshots ToggleButton Primary 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <button
+    className="sc-bBHxTw sc-iwjdpV MxLvP csuOVF"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      data-image="tomato"
+      src="tomato_small_color.svg"
+    />
+    <img
+      alt=""
+      data-image="arrow"
+      src="arrow.svg"
+    />
+  </button>
+</div>
+`;
+
 exports[`Storyshots TomatoButton Active 1`] = `
 <button
-  className="sc-cxpSdN cBSbbH"
+  className="sc-iJKOTD cMedTm"
 />
 `;
 
 exports[`Storyshots TomatoButton Default 1`] = `
 <button
-  className="sc-cxpSdN eLqIuL"
+  className="sc-iJKOTD IlfgO"
 />
 `;
 
 exports[`Storyshots TomatoButtonGroup Default 1`] = `
 <div
-  className="sc-llYSUQ goOiNX"
+  className="sc-giYglK jeobSK"
   onClick={[Function]}
 >
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={1}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={2}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={3}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={4}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={5}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={6}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={7}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={8}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={9}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={10}
   />
 </div>
@@ -1922,47 +1949,47 @@ exports[`Storyshots TomatoButtonGroup Default 1`] = `
 
 exports[`Storyshots TomatoButtonGroup Default Selected Number 1`] = `
 <div
-  className="sc-llYSUQ goOiNX"
+  className="sc-giYglK jeobSK"
   onClick={[Function]}
 >
   <button
-    className="sc-cxpSdN cBSbbH"
+    className="sc-iJKOTD cMedTm"
     data-number={1}
   />
   <button
-    className="sc-cxpSdN cBSbbH"
+    className="sc-iJKOTD cMedTm"
     data-number={2}
   />
   <button
-    className="sc-cxpSdN cBSbbH"
+    className="sc-iJKOTD cMedTm"
     data-number={3}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={4}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={5}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={6}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={7}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={8}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={9}
   />
   <button
-    className="sc-cxpSdN eLqIuL"
+    className="sc-iJKOTD IlfgO"
     data-number={10}
   />
 </div>
