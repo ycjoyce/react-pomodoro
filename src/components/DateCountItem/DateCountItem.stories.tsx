@@ -22,3 +22,9 @@ Default.args = {
   date: new Date(),
   tomatoAmount: 5,
 };
+
+export const NoTomato = Template.bind({});
+NoTomato.args = {
+  date: new Date(),
+  tomatoAmount: 0,
+};

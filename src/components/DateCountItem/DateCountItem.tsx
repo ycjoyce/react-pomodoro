@@ -23,12 +23,20 @@ export const weekdayMap: { [idx: number]: string } = {
 };
 
 const DateCountItem: FC<DateCountItemProps> = ({ date, tomatoAmount }) => {
-  const renderTomatoGroup = (amount: number) => (
-    <StyledTomatoBox>
-      <StyledTomatoTitle>{tomatoAmount}</StyledTomatoTitle>
-      {new Array(amount).fill(<StyledTomato />)}
-    </StyledTomatoBox>
-  );
+  const renderTomatoGroup = (amount: number) => {
+    const tomatoes = [];
+    for (let i = 0; i < amount; i++) {
+      tomatoes.push(<StyledTomato key={i} />);
+    }
+    return (
+      <StyledTomatoBox>
+        {tomatoAmount > 0 && (
+          <StyledTomatoTitle>{tomatoAmount}</StyledTomatoTitle>
+        )}
+        {tomatoes}
+      </StyledTomatoBox>
+    );
+  };
 
   const renderDate = (date: Date) => {
     const weekday = weekdayMap[date.getDay()];

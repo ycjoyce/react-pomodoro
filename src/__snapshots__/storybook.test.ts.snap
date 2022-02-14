@@ -197,13 +197,303 @@ exports[`Storyshots DateCountItem Default 1`] = `
       <p
         className="sc-gKclnd kAkzlB"
       >
-        2/13
+        2/14
       </p>
       <p
         className="sc-gKclnd kAkzlB"
       >
-        SUN
+        MON
       </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DateCountItem No Tomato 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+>
+  <div
+    className="sc-iqseJM jlfgHR"
+  >
+    <div
+      className="sc-pVTFL gwDOnY"
+    />
+    <div
+      className="sc-kDTinF"
+    >
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        2/14
+      </p>
+      <p
+        className="sc-gKclnd kAkzlB"
+      >
+        MON
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DateCountPanel Default 1`] = `
+<div
+  className="sc-gsDKAQ kOwJXi"
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="sc-crHmcD iaIScP"
+  >
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      />
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/13
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          SUN
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          1
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/14
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          MON
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          2
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/15
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          TUE
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          3
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/16
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          WED
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          4
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/17
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          THU
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          5
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/18
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          FRI
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-iqseJM jlfgHR"
+    >
+      <div
+        className="sc-pVTFL gwDOnY"
+      >
+        <p
+          className="sc-jrQzAO bzluKI"
+        >
+          6
+        </p>
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+        <div
+          className="sc-furwcr iZQuQD"
+        />
+      </div>
+      <div
+        className="sc-kDTinF"
+      >
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          2/19
+        </p>
+        <p
+          className="sc-gKclnd kAkzlB"
+        >
+          SAT
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -211,7 +501,7 @@ exports[`Storyshots DateCountItem Default 1`] = `
 
 exports[`Storyshots Label Default 1`] = `
 <label
-  className="sc-crHmcD jkPnnN"
+  className="sc-egiyK jtTmTn"
 >
   TEST
 </label>
@@ -219,46 +509,46 @@ exports[`Storyshots Label Default 1`] = `
 
 exports[`Storyshots Panel Ringtone 1`] = `
 <div
-  className="sc-fotOHu fbRoMX"
+  className="sc-fFeiMQ iVwcrJ"
 >
   <div
-    className="sc-bqiRlB drhRSe"
+    className="sc-ksdxgE eXzGbN"
   >
     <button
-      className="sc-egiyK bMjboy"
+      className="sc-bqiRlB hLiIXR"
       onClick={[Function]}
     >
       WORK
     </button>
     <button
-      className="sc-egiyK qrRZZ"
+      className="sc-bqiRlB iiDRiq"
       onClick={[Function]}
     >
       BREAK
     </button>
   </div>
   <ul
-    className="sc-hBUSln fFpKsF"
+    className="sc-fotOHu kEqiTQ"
   >
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
           onClick={[Function]}
         >
           <div
-            className="sc-kfPuZi kdxeZQ"
+            className="sc-fKVqWL eIArge"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
             style={
               Object {
                 "marginBottom": 0,
@@ -269,7 +559,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
           </p>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
             className="sc-bdvvtL fZQeXN"
@@ -283,24 +573,24 @@ exports[`Storyshots Panel Ringtone 1`] = `
       </div>
     </li>
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
           onClick={[Function]}
         >
           <div
-            className="sc-kfPuZi kdxeZQ"
+            className="sc-fKVqWL eIArge"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
             style={
               Object {
                 "marginBottom": 0,
@@ -311,7 +601,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
           </p>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
             className="sc-bdvvtL fZQeXN"
@@ -325,24 +615,24 @@ exports[`Storyshots Panel Ringtone 1`] = `
       </div>
     </li>
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
           onClick={[Function]}
         >
           <div
-            className="sc-kfPuZi kdxeZQ"
+            className="sc-fKVqWL eIArge"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
             style={
               Object {
                 "marginBottom": 0,
@@ -353,7 +643,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
           </p>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
             className="sc-bdvvtL fZQeXN"
@@ -372,71 +662,71 @@ exports[`Storyshots Panel Ringtone 1`] = `
 
 exports[`Storyshots Panel Task 1`] = `
 <div
-  className="sc-fotOHu fbRoMX"
+  className="sc-fFeiMQ iVwcrJ"
 >
   <div
-    className="sc-bqiRlB drhRSe"
+    className="sc-ksdxgE eXzGbN"
   >
     <button
-      className="sc-egiyK bMjboy"
+      className="sc-bqiRlB hLiIXR"
       onClick={[Function]}
     >
       TO DO
     </button>
     <button
-      className="sc-egiyK qrRZZ"
+      className="sc-bqiRlB iiDRiq"
       onClick={[Function]}
     >
       DONE
     </button>
   </div>
   <ul
-    className="sc-hBUSln fFpKsF"
+    className="sc-fotOHu kEqiTQ"
   >
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-iJKOTD fZkTzy"
+        className="sc-giYglK dkUFFj"
       >
         <div
-          className="sc-ieecCq bTHOdT"
+          className="sc-dJjYzT lnZgzo"
         >
           <div
-            className="sc-dJjYzT jcVwOS"
+            className="sc-hGPBjI gEDQwj"
           >
             <div>
               <p
-                className="sc-hGPBjI hsCNlP"
+                className="sc-dlVxhl jPvpsr"
               >
                 todo 1
               </p>
               <div
-                className="sc-bkkeKt cBmWlU"
+                className="sc-ieecCq bdiIAA"
               >
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
               </div>
             </div>
           </div>
           <div
-            className="sc-dlVxhl bRYPns"
+            className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-fKVqWL hMRyri"
+              className="sc-bBHxTw hqSaxs"
               onClick={[Function]}
             >
               ...
@@ -446,49 +736,49 @@ exports[`Storyshots Panel Task 1`] = `
       </div>
     </li>
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-iJKOTD fZkTzy"
+        className="sc-giYglK dkUFFj"
       >
         <div
-          className="sc-ieecCq bTHOdT"
+          className="sc-dJjYzT lnZgzo"
         >
           <div
-            className="sc-dJjYzT jcVwOS"
+            className="sc-hGPBjI gEDQwj"
           >
             <div>
               <p
-                className="sc-hGPBjI hsCNlP"
+                className="sc-dlVxhl jPvpsr"
               >
                 todo 2
               </p>
               <div
-                className="sc-bkkeKt cBmWlU"
+                className="sc-ieecCq bdiIAA"
               >
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
               </div>
             </div>
           </div>
           <div
-            className="sc-dlVxhl bRYPns"
+            className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-fKVqWL hMRyri"
+              className="sc-bBHxTw hqSaxs"
               onClick={[Function]}
             >
               ...
@@ -498,49 +788,49 @@ exports[`Storyshots Panel Task 1`] = `
       </div>
     </li>
     <li
-      className="sc-ksdxgE ceSqbe"
+      className="sc-hBUSln rmFBK"
     >
       <div
-        className="sc-iJKOTD fZkTzy"
+        className="sc-giYglK dkUFFj"
       >
         <div
-          className="sc-ieecCq bTHOdT"
+          className="sc-dJjYzT lnZgzo"
         >
           <div
-            className="sc-dJjYzT jcVwOS"
+            className="sc-hGPBjI gEDQwj"
           >
             <div>
               <p
-                className="sc-hGPBjI hsCNlP"
+                className="sc-dlVxhl jPvpsr"
               >
                 todo 3
               </p>
               <div
-                className="sc-bkkeKt cBmWlU"
+                className="sc-ieecCq bdiIAA"
               >
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
                 <div
-                  className="sc-fFeiMQ ivQxNF"
+                  className="sc-bkkeKt dMAlZN"
                 />
               </div>
             </div>
           </div>
           <div
-            className="sc-dlVxhl bRYPns"
+            className="sc-kfPuZi fKzSUh"
           >
             <button
-              className="sc-fKVqWL hMRyri"
+              className="sc-bBHxTw hqSaxs"
               onClick={[Function]}
             >
               ...
@@ -555,7 +845,7 @@ exports[`Storyshots Panel Task 1`] = `
 
 exports[`Storyshots PanelItem Default 1`] = `
 <li
-  className="sc-ksdxgE ceSqbe"
+  className="sc-hBUSln rmFBK"
 >
   <h3>
     Hello World
@@ -565,20 +855,20 @@ exports[`Storyshots PanelItem Default 1`] = `
 
 exports[`Storyshots PanelList Default 1`] = `
 <ul
-  className="sc-hBUSln fFpKsF"
+  className="sc-fotOHu kEqiTQ"
 >
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     1
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     2
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     3
   </li>
@@ -587,34 +877,34 @@ exports[`Storyshots PanelList Default 1`] = `
 
 exports[`Storyshots Record Completed 1`] = `
 <div
-  className="sc-fFeiMQ bpOYiw"
+  className="sc-bkkeKt bYaGkw"
 />
 `;
 
 exports[`Storyshots Record Default 1`] = `
 <div
-  className="sc-fFeiMQ ivQxNF"
+  className="sc-bkkeKt dMAlZN"
 />
 `;
 
 exports[`Storyshots RecordGroup Default 1`] = `
 <div
-  className="sc-bkkeKt cBmWlU"
+  className="sc-ieecCq bdiIAA"
 >
   <div
-    className="sc-fFeiMQ ivQxNF"
+    className="sc-bkkeKt dMAlZN"
   />
   <div
-    className="sc-fFeiMQ ivQxNF"
+    className="sc-bkkeKt dMAlZN"
   />
   <div
-    className="sc-fFeiMQ ivQxNF"
+    className="sc-bkkeKt dMAlZN"
   />
   <div
-    className="sc-fFeiMQ ivQxNF"
+    className="sc-bkkeKt dMAlZN"
   />
   <div
-    className="sc-fFeiMQ ivQxNF"
+    className="sc-bkkeKt dMAlZN"
   />
 </div>
 `;
@@ -624,21 +914,21 @@ exports[`Storyshots RingtoneItem Default 1`] = `
   className="sc-gsDKAQ kOwJXi"
 >
   <div
-    className="sc-ieecCq bTHOdT"
+    className="sc-dJjYzT lnZgzo"
   >
     <div
-      className="sc-dJjYzT jcVwOS"
+      className="sc-hGPBjI gEDQwj"
       onClick={[Function]}
     >
       <div
-        className="sc-kfPuZi kdxeZQ"
+        className="sc-fKVqWL eIArge"
       >
         <div
-          className="sc-fFeiMQ ivQxNF"
+          className="sc-bkkeKt dMAlZN"
         />
       </div>
       <p
-        className="sc-hGPBjI hsCNlP"
+        className="sc-dlVxhl jPvpsr"
         style={
           Object {
             "marginBottom": 0,
@@ -649,7 +939,7 @@ exports[`Storyshots RingtoneItem Default 1`] = `
       </p>
     </div>
     <div
-      className="sc-dlVxhl bRYPns"
+      className="sc-kfPuZi fKzSUh"
     >
       <button
         className="sc-bdvvtL fZQeXN"
@@ -666,27 +956,27 @@ exports[`Storyshots RingtoneItem Default 1`] = `
 
 exports[`Storyshots RingtonePanelList Default 1`] = `
 <ul
-  className="sc-hBUSln fFpKsF"
+  className="sc-fotOHu kEqiTQ"
 >
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
         onClick={[Function]}
       >
         <div
-          className="sc-kfPuZi kdxeZQ"
+          className="sc-fKVqWL eIArge"
         >
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
         </div>
         <p
-          className="sc-hGPBjI hsCNlP"
+          className="sc-dlVxhl jPvpsr"
           style={
             Object {
               "marginBottom": 0,
@@ -697,7 +987,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
         </p>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
           className="sc-bdvvtL fZQeXN"
@@ -711,24 +1001,24 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
         onClick={[Function]}
       >
         <div
-          className="sc-kfPuZi kdxeZQ"
+          className="sc-fKVqWL eIArge"
         >
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
         </div>
         <p
-          className="sc-hGPBjI hsCNlP"
+          className="sc-dlVxhl jPvpsr"
           style={
             Object {
               "marginBottom": 0,
@@ -739,7 +1029,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
         </p>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
           className="sc-bdvvtL fZQeXN"
@@ -753,24 +1043,24 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
         onClick={[Function]}
       >
         <div
-          className="sc-kfPuZi kdxeZQ"
+          className="sc-fKVqWL eIArge"
         >
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
         </div>
         <p
-          className="sc-hGPBjI hsCNlP"
+          className="sc-dlVxhl jPvpsr"
           style={
             Object {
               "marginBottom": 0,
@@ -781,7 +1071,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
         </p>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
           className="sc-bdvvtL fZQeXN"
@@ -799,7 +1089,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
 
 exports[`Storyshots Tab Active 1`] = `
 <button
-  className="sc-egiyK bMjboy"
+  className="sc-bqiRlB hLiIXR"
   onClick={[Function]}
 >
   TEST
@@ -808,7 +1098,7 @@ exports[`Storyshots Tab Active 1`] = `
 
 exports[`Storyshots Tab Default 1`] = `
 <button
-  className="sc-egiyK qrRZZ"
+  className="sc-bqiRlB iiDRiq"
   onClick={[Function]}
 >
   
@@ -817,7 +1107,7 @@ exports[`Storyshots Tab Default 1`] = `
 
 exports[`Storyshots Tab Wording 1`] = `
 <button
-  className="sc-egiyK qrRZZ"
+  className="sc-bqiRlB iiDRiq"
   onClick={[Function]}
 >
   TEST
@@ -834,46 +1124,46 @@ exports[`Storyshots TaskItem Default 1`] = `
   }
 >
   <div
-    className="sc-iJKOTD fZkTzy"
+    className="sc-giYglK dkUFFj"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
       >
         <div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
           >
             test
           </p>
           <div
-            className="sc-bkkeKt cBmWlU"
+            className="sc-ieecCq bdiIAA"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
         </div>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-fKVqWL hMRyri"
+          className="sc-bBHxTw hqSaxs"
           onClick={[Function]}
         >
           ...
@@ -894,16 +1184,16 @@ exports[`Storyshots TaskItem Done 1`] = `
   }
 >
   <div
-    className="sc-iJKOTD fZkTzy"
+    className="sc-giYglK dkUFFj"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
       >
         <div
-          className="sc-kfPuZi kdxeZQ"
+          className="sc-fKVqWL eIArge"
         >
           <img
             alt=""
@@ -912,36 +1202,36 @@ exports[`Storyshots TaskItem Done 1`] = `
         </div>
         <div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
           >
             test
           </p>
           <div
-            className="sc-bkkeKt cBmWlU"
+            className="sc-ieecCq bdiIAA"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
         </div>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-fKVqWL hMRyri"
+          className="sc-bBHxTw hqSaxs"
           onClick={[Function]}
         >
           ...
@@ -962,46 +1252,46 @@ exports[`Storyshots TaskItem Opened 1`] = `
   }
 >
   <div
-    className="sc-iJKOTD fZkTzy"
+    className="sc-giYglK dkUFFj"
   >
     <div
-      className="sc-ieecCq bTHOdT"
+      className="sc-dJjYzT lnZgzo"
     >
       <div
-        className="sc-dJjYzT jcVwOS"
+        className="sc-hGPBjI gEDQwj"
       >
         <div>
           <p
-            className="sc-hGPBjI hsCNlP"
+            className="sc-dlVxhl jPvpsr"
           >
             test
           </p>
           <div
-            className="sc-bkkeKt cBmWlU"
+            className="sc-ieecCq bdiIAA"
           >
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
             <div
-              className="sc-fFeiMQ ivQxNF"
+              className="sc-bkkeKt dMAlZN"
             />
           </div>
         </div>
       </div>
       <div
-        className="sc-dlVxhl bRYPns"
+        className="sc-kfPuZi fKzSUh"
       >
         <button
-          className="sc-fKVqWL ilFsKv"
+          className="sc-bBHxTw lhbZhR"
           onClick={[Function]}
         >
           ...
@@ -1010,16 +1300,16 @@ exports[`Storyshots TaskItem Opened 1`] = `
     </div>
     <hr />
     <div
-      className="sc-llYSUQ eAYBfQ"
+      className="sc-iJKOTD jJOMBX"
     >
       <div>
         <label
-          className="sc-crHmcD jkPnnN"
+          className="sc-egiyK jtTmTn"
         >
           TASK TITLE
         </label>
         <input
-          className="sc-bBHxTw gzEbwK"
+          className="sc-iwjdpV fqEKcH"
           onChange={[Function]}
           type="text"
           value="test"
@@ -1027,52 +1317,52 @@ exports[`Storyshots TaskItem Opened 1`] = `
       </div>
       <div>
         <label
-          className="sc-crHmcD jkPnnN"
+          className="sc-egiyK jtTmTn"
         >
           ESTIMATED TOMATO
         </label>
         <div
-          className="sc-cxpSdN bxXPvn"
+          className="sc-llYSUQ goOiNX"
           onClick={[Function]}
         >
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={1}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={2}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={3}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={4}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={5}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={6}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={7}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={8}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={9}
           />
           <button
-            className="sc-iwjdpV hvJHn"
+            className="sc-cxpSdN eLqIuL"
             data-number={10}
           />
         </div>
@@ -1110,7 +1400,7 @@ exports[`Storyshots TaskItemOperate/DoneTask Default 1`] = `
   }
 >
   <div
-    className="sc-llYSUQ eAYBfQ"
+    className="sc-iJKOTD jJOMBX"
   >
     <div
       className="sc-hKwDye faWgkr"
@@ -1144,16 +1434,16 @@ exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
   }
 >
   <div
-    className="sc-llYSUQ eAYBfQ"
+    className="sc-iJKOTD jJOMBX"
   >
     <div>
       <label
-        className="sc-crHmcD jkPnnN"
+        className="sc-egiyK jtTmTn"
       >
         TASK TITLE
       </label>
       <input
-        className="sc-bBHxTw gzEbwK"
+        className="sc-iwjdpV fqEKcH"
         onChange={[Function]}
         type="text"
         value="test"
@@ -1161,52 +1451,52 @@ exports[`Storyshots TaskItemOperate/TodoTask Default 1`] = `
     </div>
     <div>
       <label
-        className="sc-crHmcD jkPnnN"
+        className="sc-egiyK jtTmTn"
       >
         ESTIMATED TOMATO
       </label>
       <div
-        className="sc-cxpSdN bxXPvn"
+        className="sc-llYSUQ goOiNX"
         onClick={[Function]}
       >
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={1}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={2}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={3}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={4}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={5}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={6}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={7}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={8}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={9}
         />
         <button
-          className="sc-iwjdpV hvJHn"
+          className="sc-cxpSdN eLqIuL"
           data-number={10}
         />
       </div>
@@ -1238,43 +1528,43 @@ exports[`Storyshots TaskItemTitle Default 1`] = `
   className="sc-gsDKAQ kOwJXi"
 >
   <div
-    className="sc-ieecCq bTHOdT"
+    className="sc-dJjYzT lnZgzo"
   >
     <div
-      className="sc-dJjYzT jcVwOS"
+      className="sc-hGPBjI gEDQwj"
     >
       <div>
         <p
-          className="sc-hGPBjI hsCNlP"
+          className="sc-dlVxhl jPvpsr"
         >
           test
         </p>
         <div
-          className="sc-bkkeKt cBmWlU"
+          className="sc-ieecCq bdiIAA"
         >
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
         </div>
       </div>
     </div>
     <div
-      className="sc-dlVxhl bRYPns"
+      className="sc-kfPuZi fKzSUh"
     >
       <button
-        className="sc-fKVqWL hMRyri"
+        className="sc-bBHxTw hqSaxs"
         onClick={[Function]}
       >
         ...
@@ -1289,13 +1579,13 @@ exports[`Storyshots TaskItemTitle Done 1`] = `
   className="sc-gsDKAQ kOwJXi"
 >
   <div
-    className="sc-ieecCq bTHOdT"
+    className="sc-dJjYzT lnZgzo"
   >
     <div
-      className="sc-dJjYzT jcVwOS"
+      className="sc-hGPBjI gEDQwj"
     >
       <div
-        className="sc-kfPuZi kdxeZQ"
+        className="sc-fKVqWL eIArge"
       >
         <img
           alt=""
@@ -1304,36 +1594,36 @@ exports[`Storyshots TaskItemTitle Done 1`] = `
       </div>
       <div>
         <p
-          className="sc-hGPBjI hsCNlP"
+          className="sc-dlVxhl jPvpsr"
         >
           test
         </p>
         <div
-          className="sc-bkkeKt cBmWlU"
+          className="sc-ieecCq bdiIAA"
         >
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
           <div
-            className="sc-fFeiMQ ivQxNF"
+            className="sc-bkkeKt dMAlZN"
           />
         </div>
       </div>
     </div>
     <div
-      className="sc-dlVxhl bRYPns"
+      className="sc-kfPuZi fKzSUh"
     >
       <button
-        className="sc-fKVqWL hMRyri"
+        className="sc-bBHxTw hqSaxs"
         onClick={[Function]}
       >
         ...
@@ -1345,52 +1635,52 @@ exports[`Storyshots TaskItemTitle Done 1`] = `
 
 exports[`Storyshots TaskPanelList Default 1`] = `
 <ul
-  className="sc-hBUSln fFpKsF"
+  className="sc-fotOHu kEqiTQ"
 >
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-iJKOTD fZkTzy"
+      className="sc-giYglK dkUFFj"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
         >
           <div>
             <p
-              className="sc-hGPBjI hsCNlP"
+              className="sc-dlVxhl jPvpsr"
             >
               test1
             </p>
             <div
-              className="sc-bkkeKt cBmWlU"
+              className="sc-ieecCq bdiIAA"
             >
               <div
-                className="sc-fFeiMQ bpOYiw"
+                className="sc-bkkeKt bYaGkw"
               />
               <div
-                className="sc-fFeiMQ bpOYiw"
+                className="sc-bkkeKt bYaGkw"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
             </div>
           </div>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-fKVqWL hMRyri"
+            className="sc-bBHxTw hqSaxs"
             onClick={[Function]}
           >
             ...
@@ -1400,52 +1690,52 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-iJKOTD fZkTzy"
+      className="sc-giYglK dkUFFj"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
         >
           <div>
             <p
-              className="sc-hGPBjI hsCNlP"
+              className="sc-dlVxhl jPvpsr"
             >
               test2
             </p>
             <div
-              className="sc-bkkeKt cBmWlU"
+              className="sc-ieecCq bdiIAA"
             >
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
             </div>
           </div>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-fKVqWL hMRyri"
+            className="sc-bBHxTw hqSaxs"
             onClick={[Function]}
           >
             ...
@@ -1455,43 +1745,43 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-ksdxgE ceSqbe"
+    className="sc-hBUSln rmFBK"
   >
     <div
-      className="sc-iJKOTD fZkTzy"
+      className="sc-giYglK dkUFFj"
     >
       <div
-        className="sc-ieecCq bTHOdT"
+        className="sc-dJjYzT lnZgzo"
       >
         <div
-          className="sc-dJjYzT jcVwOS"
+          className="sc-hGPBjI gEDQwj"
         >
           <div>
             <p
-              className="sc-hGPBjI hsCNlP"
+              className="sc-dlVxhl jPvpsr"
             >
               test3
             </p>
             <div
-              className="sc-bkkeKt cBmWlU"
+              className="sc-ieecCq bdiIAA"
             >
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
               <div
-                className="sc-fFeiMQ ivQxNF"
+                className="sc-bkkeKt dMAlZN"
               />
             </div>
           </div>
         </div>
         <div
-          className="sc-dlVxhl bRYPns"
+          className="sc-kfPuZi fKzSUh"
         >
           <button
-            className="sc-fKVqWL hMRyri"
+            className="sc-bBHxTw hqSaxs"
             onClick={[Function]}
           >
             ...
@@ -1513,7 +1803,7 @@ exports[`Storyshots TextInput Default 1`] = `
   }
 >
   <input
-    className="sc-bBHxTw gzEbwK"
+    className="sc-iwjdpV fqEKcH"
     onChange={[Function]}
     type="text"
     value=""
@@ -1531,7 +1821,7 @@ exports[`Storyshots TextInput Password 1`] = `
   }
 >
   <input
-    className="sc-bBHxTw gzEbwK"
+    className="sc-iwjdpV fqEKcH"
     onChange={[Function]}
     type="password"
     value=""
@@ -1549,10 +1839,10 @@ exports[`Storyshots Title Default 1`] = `
   }
 >
   <div
-    className="sc-giYglK gIIsJS"
+    className="sc-ezbkAF kyNxzQ"
   >
     <h1
-      className="sc-ezbkAF hoPdoW"
+      className="sc-bYoBSM LOJuH"
     >
       TEST
     </h1>
@@ -1563,7 +1853,7 @@ exports[`Storyshots Title Default 1`] = `
 
 exports[`Storyshots ToggleButton Default 1`] = `
 <button
-  className="sc-fKVqWL hMRyri"
+  className="sc-bBHxTw hqSaxs"
   onClick={[Function]}
 >
   ...
@@ -1572,59 +1862,59 @@ exports[`Storyshots ToggleButton Default 1`] = `
 
 exports[`Storyshots TomatoButton Active 1`] = `
 <button
-  className="sc-iwjdpV jvOkUj"
+  className="sc-cxpSdN cBSbbH"
 />
 `;
 
 exports[`Storyshots TomatoButton Default 1`] = `
 <button
-  className="sc-iwjdpV hvJHn"
+  className="sc-cxpSdN eLqIuL"
 />
 `;
 
 exports[`Storyshots TomatoButtonGroup Default 1`] = `
 <div
-  className="sc-cxpSdN bxXPvn"
+  className="sc-llYSUQ goOiNX"
   onClick={[Function]}
 >
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={1}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={2}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={3}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={4}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={5}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={6}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={7}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={8}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={9}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={10}
   />
 </div>
@@ -1632,47 +1922,47 @@ exports[`Storyshots TomatoButtonGroup Default 1`] = `
 
 exports[`Storyshots TomatoButtonGroup Default Selected Number 1`] = `
 <div
-  className="sc-cxpSdN bxXPvn"
+  className="sc-llYSUQ goOiNX"
   onClick={[Function]}
 >
   <button
-    className="sc-iwjdpV jvOkUj"
+    className="sc-cxpSdN cBSbbH"
     data-number={1}
   />
   <button
-    className="sc-iwjdpV jvOkUj"
+    className="sc-cxpSdN cBSbbH"
     data-number={2}
   />
   <button
-    className="sc-iwjdpV jvOkUj"
+    className="sc-cxpSdN cBSbbH"
     data-number={3}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={4}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={5}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={6}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={7}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={8}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={9}
   />
   <button
-    className="sc-iwjdpV hvJHn"
+    className="sc-cxpSdN eLqIuL"
     data-number={10}
   />
 </div>
