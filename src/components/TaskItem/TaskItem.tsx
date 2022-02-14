@@ -4,13 +4,16 @@ import TodoTaskItemOperate from "../TaskItemOperate/Todo/TodoTaskItemOperate";
 import DoneTaskItemOperate from "../TaskItemOperate/Done/DoneTaskItemOperate";
 import StyledTaskItem from "./TaskItem.style";
 
-export interface TaskItemProps {
+export interface Task {
+  title: string;
+  recordLength: number; // 記錄的番茄數量
+  recordCompletedNumber?: number;
+}
+
+export interface TaskItemProps extends Task {
   opened?: boolean;
   done?: boolean;
-  title: string;
-  recordLength: number;
-  recordCompletedNumber?: number;
-  tomatoAmount?: number;
+  tomatoAmount?: number; // 編輯的番茄數量
   onToggle?: (toOpen: boolean) => void;
 }
 
@@ -23,12 +26,10 @@ const TaskItem: FC<TaskItemProps> = ({
   tomatoAmount = 0,
   onToggle = () => {},
 }) => {
-  // const [operateOpened, setOperateOpened] = useState(opened);
   const [taskTitle, setTaskTitle] = useState(title);
   const [selectedTomato, setSelectedTomato] = useState(tomatoAmount);
 
   const handleToggle = () => {
-    // setOperateOpened((o) => !o);
     onToggle(!opened);
   };
 

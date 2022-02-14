@@ -1,21 +1,15 @@
 import React, { FC } from "react";
 import StyledPlayButton from "./PlayButton.style";
 
-export enum PlayType {
-  PLAY = "PLAY",
-  PAUSE = "PAUSE",
-  RESET = "RESET",
-}
-
 export interface PlayButtonProps {
-  operate: PlayType;
+  operate?: "start" | "pause" | "reset";
   primary?: boolean;
   active?: boolean;
   onClick?: () => void;
 }
 
 const PlayButton: FC<PlayButtonProps> = ({
-  operate,
+  operate = "start",
   primary = true,
   active = false,
   onClick = () => {},
