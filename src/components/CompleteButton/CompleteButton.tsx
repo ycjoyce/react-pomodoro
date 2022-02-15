@@ -6,7 +6,9 @@ export interface CompleteButtonProps {
 }
 
 const CompleteButton: FC<CompleteButtonProps> = ({ onClick = () => {} }) => (
-  <StyledCompletedButton>TASK COMPLETED</StyledCompletedButton>
+  <StyledCompletedButton onClick={onClick}>
+    TASK COMPLETED
+  </StyledCompletedButton>
 );
 
 export default CompleteButton;

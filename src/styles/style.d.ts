@@ -8,6 +8,7 @@ declare module "styled-components" {
       light: string;
       dark: string;
       black: string;
+      emphasize: string;
     };
     font: {
       1: string;

@@ -23,7 +23,8 @@ export const Task = Template.bind({});
 Task.args = {
   task: {
     title: "Test",
-    recordLength: 5,
-    recordCompletedNumber: 1,
+    recordLength: 1,
+    recordCompletedNumber: 0,
   },
+  tomatoUnitTime: 10,
 };

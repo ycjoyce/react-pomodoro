@@ -1,4 +1,5 @@
 import React, { FC, useState, useEffect } from "react";
+import theme from "../../styles/abstracts/theme";
 import Pie from "../Pie/Pie";
 import Timer from "../Timer/Timer";
 import { StyledTimerBox } from "./TimerPie.style";
@@ -6,9 +7,14 @@ import { StyledTimerBox } from "./TimerPie.style";
 export interface TimerPieProps {
   totalTime: number;
   passedTime: number;
+  primary?: boolean;
 }
 
-const TimerPie: FC<TimerPieProps> = ({ totalTime, passedTime }) => {
+const TimerPie: FC<TimerPieProps> = ({
+  totalTime,
+  passedTime,
+  primary = true,
+}) => {
   const [convertTotalTime, setConvertTotalTime] = useState(totalTime);
   const [convertPassedTime, setConvertPassedTime] = useState(passedTime);
   const [remaingTime, setRemainingTime] = useState(totalTime - passedTime);
@@ -28,7 +34,10 @@ const TimerPie: FC<TimerPieProps> = ({ totalTime, passedTime }) => {
   }, [convertTotalTime, convertPassedTime]);
 
   return (
-    <Pie degree={degree}>
+    <Pie
+      degree={degree}
+      color={primary ? theme.color.primary : theme.color.emphasize}
+    >
       <StyledTimerBox>
         <Timer remainingTime={remaingTime} />
       </StyledTimerBox>

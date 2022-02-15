@@ -7,6 +7,7 @@ const theme: DefaultTheme = {
     light: "#acacac",
     dark: "#414141",
     black: "#333",
+    emphasize: "#b5e254",
   },
   font: {
     1: "2rem",

@@ -24,6 +24,16 @@ export const StyledButtonGroup = styled.div`
   align-items: center;
 `;
 
+export const StyledBreaktimeLabel = styled.p`
+  color: #fff;
+  background-color: ${({ theme }) => theme.color.emphasize};
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: ${({ theme }) => theme.font.small};
+`;
+
 const StyledTaskTimer = styled.div`
   text-align: center;
 

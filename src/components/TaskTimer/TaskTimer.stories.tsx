@@ -21,3 +21,11 @@ Default.args = {
   recordCompletedNumber: 2,
   tomatoUnitTime: 10,
 };
+
+export const Break = Template.bind({});
+Break.args = {
+  title: "test",
+  recordLength: 1,
+  breaktime: true,
+  tomatoUnitTime: 10,
+};
