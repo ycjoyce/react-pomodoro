@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import PanelList from "../PanelList/PanelList";
 import PanelItem from "../PanelItem/PanelItem";
 import TaskItem, { TaskItemProps } from "../TaskItem/TaskItem";
+import StyledPanelItem from "../PanelItem/PanelItem.style";
 
 export interface TaskPanelListProps {
   contents: TaskItemProps[];
@@ -15,7 +16,7 @@ const TaskPanelList: FC<TaskPanelListProps> = ({ contents }) => {
       setOpenedItem(toOpen ? title : "");
     };
     return contents.map((item) => (
-      <PanelItem>
+      <PanelItem key={item.title}>
         <TaskItem
           {...item}
           opened={item.title === openedItem}
@@ -25,7 +26,19 @@ const TaskPanelList: FC<TaskPanelListProps> = ({ contents }) => {
     ));
   };
 
-  return <PanelList>{renderItems(contents)}</PanelList>;
+  return (
+    <PanelList>
+      {contents.length > 0 ? (
+        renderItems(contents)
+      ) : (
+        <StyledPanelItem empty={true}>
+          You don't have any task now,
+          <br />
+          please add task first!
+        </StyledPanelItem>
+      )}
+    </PanelList>
+  );
 };
 
 export default TaskPanelList;

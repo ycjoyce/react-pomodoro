@@ -554,7 +554,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
     className="sc-bkkeKt bRZQsF"
   >
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-dlVxhl jfnzXV"
@@ -596,7 +596,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
       </div>
     </li>
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-dlVxhl jfnzXV"
@@ -638,7 +638,7 @@ exports[`Storyshots Panel Ringtone 1`] = `
       </div>
     </li>
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-dlVxhl jfnzXV"
@@ -707,7 +707,7 @@ exports[`Storyshots Panel Task 1`] = `
     className="sc-bkkeKt bRZQsF"
   >
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-ikJyIC kttgoj"
@@ -759,7 +759,7 @@ exports[`Storyshots Panel Task 1`] = `
       </div>
     </li>
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-ikJyIC kttgoj"
@@ -811,7 +811,7 @@ exports[`Storyshots Panel Task 1`] = `
       </div>
     </li>
     <li
-      className="sc-fFeiMQ jzYpmo"
+      className="sc-fFeiMQ cTyrCz"
     >
       <div
         className="sc-ikJyIC kttgoj"
@@ -868,7 +868,7 @@ exports[`Storyshots Panel Task 1`] = `
 
 exports[`Storyshots PanelItem Default 1`] = `
 <li
-  className="sc-fFeiMQ jzYpmo"
+  className="sc-fFeiMQ cTyrCz"
 >
   <h3>
     Hello World
@@ -881,17 +881,17 @@ exports[`Storyshots PanelList Default 1`] = `
   className="sc-bkkeKt bRZQsF"
 >
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     1
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     2
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     3
   </li>
@@ -1038,7 +1038,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
   className="sc-bkkeKt bRZQsF"
 >
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-dlVxhl jfnzXV"
@@ -1080,7 +1080,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-dlVxhl jfnzXV"
@@ -1122,7 +1122,7 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-dlVxhl jfnzXV"
@@ -1736,7 +1736,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
   className="sc-bkkeKt bRZQsF"
 >
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-ikJyIC kttgoj"
@@ -1788,7 +1788,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-ikJyIC kttgoj"
@@ -1843,7 +1843,7 @@ exports[`Storyshots TaskPanelList Default 1`] = `
     </div>
   </li>
   <li
-    className="sc-fFeiMQ jzYpmo"
+    className="sc-fFeiMQ cTyrCz"
   >
     <div
       className="sc-ikJyIC kttgoj"
@@ -1887,6 +1887,20 @@ exports[`Storyshots TaskPanelList Default 1`] = `
         </div>
       </div>
     </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots TaskPanelList Empty 1`] = `
+<ul
+  className="sc-bkkeKt bRZQsF"
+>
+  <li
+    className="sc-fFeiMQ jKRrgT"
+  >
+    You don't have any task now,
+    <br />
+    please add task first!
   </li>
 </ul>
 `;

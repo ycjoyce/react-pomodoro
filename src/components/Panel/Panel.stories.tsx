@@ -40,6 +40,20 @@ Task.args = {
   ],
 };
 
+export const WithEmptyList = Template.bind({});
+WithEmptyList.args = {
+  contents: [
+    {
+      tab: "to do",
+      list: <TaskPanelList contents={[]} />,
+    },
+    {
+      tab: "done",
+      list: <TaskPanelList contents={[]} />,
+    },
+  ],
+};
+
 export const Ringtone = Template.bind({});
 Ringtone.args = {
   contents: [

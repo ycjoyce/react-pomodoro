@@ -18,3 +18,8 @@ Default.args = {
     { title: "test3", recordLength: 3 },
   ],
 };
+
+export const Empty = Template.bind({});
+Empty.args = {
+  contents: [],
+};
