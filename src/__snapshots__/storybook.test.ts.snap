@@ -205,12 +205,12 @@ exports[`Storyshots DateCountItem Default 1`] = `
       <p
         className="sc-iCfMLu ceNQhQ"
       >
-        2/14
+        2/15
       </p>
       <p
         className="sc-iCfMLu ceNQhQ"
       >
-        MON
+        TUE
       </p>
     </div>
   </div>
@@ -233,12 +233,12 @@ exports[`Storyshots DateCountItem No Tomato 1`] = `
       <p
         className="sc-iCfMLu ceNQhQ"
       >
-        2/14
+        2/15
       </p>
       <p
         className="sc-iCfMLu ceNQhQ"
       >
-        MON
+        TUE
       </p>
     </div>
   </div>
@@ -1166,6 +1166,25 @@ exports[`Storyshots RingtonePanelList Default 1`] = `
 </ul>
 `;
 
+exports[`Storyshots SectionEmpty Default 1`] = `
+<div
+  className="sc-caiLqq jRa-Dsy"
+>
+  <div
+    className="sc-cidDSM gZOwwd"
+  >
+    POMODORO
+  </div>
+  <p
+    className="sc-jcFjpl kzQoJi"
+  >
+    You don't have any task now,
+    <br />
+    please add task first!
+  </p>
+</div>
+`;
+
 exports[`Storyshots Tab Active 1`] = `
 <button
   className="sc-hBUSln cEDDxB"
@@ -1872,6 +1891,92 @@ exports[`Storyshots TaskPanelList Default 1`] = `
 </ul>
 `;
 
+exports[`Storyshots TaskTimer Default 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#eaeaea",
+    }
+  }
+>
+  <div
+    className="sc-jObWnj fAWjZs"
+  >
+    <div
+      className="sc-efQSVx gKGUqq"
+    >
+      <p
+        data-title={true}
+      >
+        test
+      </p>
+      <div
+        className="sc-hGPBjI hJMqIh"
+      >
+        <div
+          className="sc-dJjYzT bVXMT"
+        />
+        <div
+          className="sc-dJjYzT bVXMT"
+        />
+        <div
+          className="sc-dJjYzT hcwjUW"
+        />
+        <div
+          className="sc-dJjYzT hcwjUW"
+        />
+        <div
+          className="sc-dJjYzT hcwjUW"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-jJoQJp ioWQL"
+      color="#ea5548"
+    >
+      <div
+        className="sc-hiCibw eYXfoN"
+        color="#ea5548"
+      />
+      <div
+        className="sc-gWXbKe cosIvp"
+      >
+        <div
+          className="sc-iAKWXU vHOPP"
+        >
+          <div
+            className="sc-iUKqMP"
+          >
+            00:30
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-cTAqQK cjWnYq"
+    >
+      <button
+        className="sc-cCcXHH ccrgoN"
+        onClick={[Function]}
+      />
+      <button
+        className="sc-cCcXHH fWNnMf"
+        onClick={[Function]}
+      />
+      <button
+        className="sc-cCcXHH clylPg"
+        onClick={[Function]}
+      />
+    </div>
+    <button
+      className="sc-eCImPb CimIN"
+    >
+      TASK COMPLETED
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots TextInput Default 1`] = `
 <div
   className="sc-gsDKAQ kOwJXi"
@@ -1910,7 +2015,7 @@ exports[`Storyshots TextInput Password 1`] = `
 
 exports[`Storyshots Timer Default 1`] = `
 <div
-  className="sc-cidDSM"
+  className="sc-iUKqMP"
 >
   00:00
 </div>
@@ -1929,10 +2034,10 @@ exports[`Storyshots TimerPie Default 1`] = `
     className="sc-gWXbKe cosIvp"
   >
     <div
-      className="sc-jcFjpl kwdBgk"
+      className="sc-iAKWXU vHOPP"
     >
       <div
-        className="sc-cidDSM"
+        className="sc-iUKqMP"
       >
         00:50
       </div>
@@ -1950,14 +2055,22 @@ exports[`Storyshots TimerSection Default 1`] = `
   }
 >
   <div>
-    <div>
-      POMODORO
+    <div
+      className="sc-caiLqq jRa-Dsy"
+    >
+      <div
+        className="sc-cidDSM gZOwwd"
+      >
+        POMODORO
+      </div>
+      <p
+        className="sc-jcFjpl kzQoJi"
+      >
+        You don't have any task now,
+        <br />
+        please add task first!
+      </p>
     </div>
-    <p>
-      You don't have any task now,
-      <br />
-      please add task first!
-    </p>
   </div>
 </div>
 `;
@@ -1971,71 +2084,81 @@ exports[`Storyshots TimerSection Task 1`] = `
   }
 >
   <div>
-    <div>
-      <p>
-        Test
-      </p>
-      <div
-        className="sc-hGPBjI hJMqIh"
-      >
-        <div
-          className="sc-dJjYzT bVXMT"
-        />
-        <div
-          className="sc-dJjYzT hcwjUW"
-        />
-        <div
-          className="sc-dJjYzT hcwjUW"
-        />
-        <div
-          className="sc-dJjYzT hcwjUW"
-        />
-        <div
-          className="sc-dJjYzT hcwjUW"
-        />
-      </div>
-    </div>
     <div
-      className="sc-jJoQJp ioWQL"
-      color="#ea5548"
+      className="sc-jObWnj fAWjZs"
     >
       <div
-        className="sc-hiCibw cFQexV"
-        color="#ea5548"
-      />
-      <div
-        className="sc-gWXbKe cosIvp"
+        className="sc-efQSVx gKGUqq"
       >
+        <p
+          data-title={true}
+        >
+          Test
+        </p>
         <div
-          className="sc-jcFjpl kwdBgk"
+          className="sc-hGPBjI hJMqIh"
         >
           <div
-            className="sc-cidDSM"
+            className="sc-dJjYzT bVXMT"
+          />
+          <div
+            className="sc-dJjYzT hcwjUW"
+          />
+          <div
+            className="sc-dJjYzT hcwjUW"
+          />
+          <div
+            className="sc-dJjYzT hcwjUW"
+          />
+          <div
+            className="sc-dJjYzT hcwjUW"
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jJoQJp ioWQL"
+        color="#ea5548"
+      >
+        <div
+          className="sc-hiCibw cFQexV"
+          color="#ea5548"
+        />
+        <div
+          className="sc-gWXbKe cosIvp"
+        >
+          <div
+            className="sc-iAKWXU vHOPP"
           >
-            04:00
+            <div
+              className="sc-iUKqMP"
+            >
+              04:00
+            </div>
           </div>
         </div>
       </div>
+      <div
+        className="sc-cTAqQK cjWnYq"
+      >
+        <button
+          className="sc-cCcXHH ccrgoN"
+          onClick={[Function]}
+        />
+        <button
+          className="sc-cCcXHH fWNnMf"
+          onClick={[Function]}
+        />
+        <button
+          className="sc-cCcXHH clylPg"
+          onClick={[Function]}
+        />
+      </div>
+      <button
+        className="sc-eCImPb CimIN"
+      >
+        TASK COMPLETED
+      </button>
     </div>
-    <div>
-      <button
-        className="sc-cCcXHH ccrgoN"
-        onClick={[Function]}
-      />
-      <button
-        className="sc-cCcXHH fWNnMf"
-        onClick={[Function]}
-      />
-      <button
-        className="sc-cCcXHH clylPg"
-        onClick={[Function]}
-      />
-    </div>
-    <button
-      className="sc-eCImPb CimIN"
-    >
-      TASK COMPLETED
-    </button>
   </div>
 </div>
 `;
@@ -2050,10 +2173,10 @@ exports[`Storyshots Title Default 1`] = `
   }
 >
   <div
-    className="sc-caiLqq jfNfQG"
+    className="sc-dPiLbb kxopuo"
   >
     <h1
-      className="sc-iUKqMP ckUCGs"
+      className="sc-bBHHxi dWPybK"
     >
       TEST
     </h1>
