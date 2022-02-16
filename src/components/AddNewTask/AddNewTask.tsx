@@ -16,7 +16,7 @@ const AddNewTask: FC<AddNewTaskProps> = ({ onSave = () => {} }) => {
   const [tomato, setTomato] = useState(0);
 
   const handleSave = () => {
-    onSave(title, tomato);
+    onSave(title.trim(), tomato);
   };
 
   return (
