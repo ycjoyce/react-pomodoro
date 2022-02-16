@@ -5,7 +5,7 @@ import TextInput from "../TextInput/TextInput";
 import TomatoButtonGroup from "../TomatoButtonGroup/TomatoButtonGroup";
 import Button from "../Button/Button";
 import { StyledButtonGroup } from "../Button/Button.style";
-import StyledAddNewTask from "./AddNewTask.style";
+import { StyledOperate } from "../OperateSection/OperateSection.style";
 
 export interface AddNewTaskProps {
   onSave?: (title: string, tomato: number) => void;
@@ -20,7 +20,7 @@ const AddNewTask: FC<AddNewTaskProps> = ({ onSave = () => {} }) => {
   };
 
   return (
-    <StyledAddNewTask>
+    <StyledOperate>
       <Title>add new task</Title>
 
       <div>
@@ -42,7 +42,7 @@ const AddNewTask: FC<AddNewTaskProps> = ({ onSave = () => {} }) => {
           ADD TASK
         </Button>
       </StyledButtonGroup>
-    </StyledAddNewTask>
+    </StyledOperate>
   );
 };
 

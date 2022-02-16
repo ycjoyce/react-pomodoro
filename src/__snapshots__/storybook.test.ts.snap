@@ -725,6 +725,265 @@ exports[`Storyshots Modal Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots OperateSection/AddNewTask Default 1`] = `
+<div
+  className="sc-pVTFL dZVpLl"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-furwcr caCiDU"
+  >
+    <div
+      className="sc-bdvvtL dnQVSH"
+    >
+      <h1
+        className="sc-gsDKAQ caCqSY"
+      >
+        ADD NEW TASK
+      </h1>
+      <hr />
+    </div>
+    <div>
+      <label
+        className="sc-dkPtRN jPiVTR"
+      >
+        TASK TITLE
+      </label>
+      <input
+        className="sc-hKwDye eRQbyJ"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        className="sc-dkPtRN jPiVTR"
+      >
+        ESTIMATED TOMATO
+      </label>
+      <div
+        className="sc-jRQBWg tBfgG"
+        onClick={[Function]}
+      >
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={1}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={2}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={3}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={4}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={5}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={6}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={7}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={8}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={9}
+        />
+        <button
+          className="sc-eCImPb dSKkuN"
+          data-number={10}
+        />
+      </div>
+    </div>
+    <div
+      className="sc-iCfMLu hBHBzP"
+    >
+      <button
+        className="sc-gKclnd bkAsgH"
+        data-large={true}
+        onClick={[Function]}
+      >
+        ADD TASK
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots OperateSection/TaskList Default 1`] = `
+<div
+  className="sc-pVTFL dZVpLl"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-furwcr caCiDU"
+  >
+    <div
+      className="sc-bdvvtL dnQVSH"
+    >
+      <h1
+        className="sc-gsDKAQ caCqSY"
+      >
+        TASK LIST
+      </h1>
+      <hr />
+    </div>
+    <div
+      className="sc-ezbkAF lhAeSE"
+    >
+      <div
+        className="sc-llYSUQ eiibXJ"
+      >
+        <button
+          className="sc-cxpSdN kLkqyl"
+          onClick={[Function]}
+        >
+          TODO
+        </button>
+        <button
+          className="sc-cxpSdN iWlxva"
+          onClick={[Function]}
+        >
+          DONE
+        </button>
+      </div>
+      <ul
+        className="sc-giYglK icIWMx"
+      >
+        <li
+          className="sc-iJKOTD hqrEXk"
+        >
+          <div
+            className="sc-iAKWXU krUsll"
+          >
+            <div
+              className="sc-ikJyIC dNOZuk"
+            >
+              <div
+                className="sc-jJoQJp lfSWHh"
+              >
+                <div>
+                  <p
+                    className="sc-hiCibw dfEUYn"
+                  >
+                    todo1
+                  </p>
+                  <div
+                    className="sc-kLwhqv jakpon"
+                  >
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="sc-gWXbKe hBIlYO"
+              >
+                <button
+                  className="sc-cidDSM sc-caiLqq iOsXAI dBfrGd"
+                  onClick={[Function]}
+                >
+                  ...
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-iJKOTD hqrEXk"
+        >
+          <div
+            className="sc-iAKWXU krUsll"
+          >
+            <div
+              className="sc-ikJyIC dNOZuk"
+            >
+              <div
+                className="sc-jJoQJp lfSWHh"
+              >
+                <div>
+                  <p
+                    className="sc-hiCibw dfEUYn"
+                  >
+                    todo2
+                  </p>
+                  <div
+                    className="sc-kLwhqv jakpon"
+                  >
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="sc-gWXbKe hBIlYO"
+              >
+                <button
+                  className="sc-cidDSM sc-caiLqq iOsXAI dBfrGd"
+                  onClick={[Function]}
+                >
+                  ...
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots PageButton Default 1`] = `
 <div
   className="sc-pVTFL dZVpLl"
@@ -1668,23 +1927,23 @@ exports[`Storyshots TaskItem Opened 1`] = `
           onClick={[Function]}
         >
           <button
-            className="sc-eCImPb dSKkuN"
+            className="sc-eCImPb gntwmx"
             data-number={1}
           />
           <button
-            className="sc-eCImPb dSKkuN"
+            className="sc-eCImPb gntwmx"
             data-number={2}
           />
           <button
-            className="sc-eCImPb dSKkuN"
+            className="sc-eCImPb gntwmx"
             data-number={3}
           />
           <button
-            className="sc-eCImPb dSKkuN"
+            className="sc-eCImPb gntwmx"
             data-number={4}
           />
           <button
-            className="sc-eCImPb dSKkuN"
+            className="sc-eCImPb gntwmx"
             data-number={5}
           />
           <button
@@ -1970,6 +2229,163 @@ exports[`Storyshots TaskItemTitle Done 1`] = `
       >
         ...
       </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TaskList Default 1`] = `
+<div
+  className="sc-pVTFL dZVpLl"
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <div
+    className="sc-furwcr caCiDU"
+  >
+    <div
+      className="sc-bdvvtL dnQVSH"
+    >
+      <h1
+        className="sc-gsDKAQ caCqSY"
+      >
+        TASK LIST
+      </h1>
+      <hr />
+    </div>
+    <div
+      className="sc-ezbkAF lhAeSE"
+    >
+      <div
+        className="sc-llYSUQ eiibXJ"
+      >
+        <button
+          className="sc-cxpSdN kLkqyl"
+          onClick={[Function]}
+        >
+          TODO
+        </button>
+        <button
+          className="sc-cxpSdN iWlxva"
+          onClick={[Function]}
+        >
+          DONE
+        </button>
+      </div>
+      <ul
+        className="sc-giYglK icIWMx"
+      >
+        <li
+          className="sc-iJKOTD hqrEXk"
+        >
+          <div
+            className="sc-iAKWXU krUsll"
+          >
+            <div
+              className="sc-ikJyIC dNOZuk"
+            >
+              <div
+                className="sc-jJoQJp lfSWHh"
+              >
+                <div>
+                  <p
+                    className="sc-hiCibw dfEUYn"
+                  >
+                    todo1
+                  </p>
+                  <div
+                    className="sc-kLwhqv jakpon"
+                  >
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="sc-gWXbKe hBIlYO"
+              >
+                <button
+                  className="sc-cidDSM sc-caiLqq iOsXAI dBfrGd"
+                  onClick={[Function]}
+                >
+                  ...
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-iJKOTD hqrEXk"
+        >
+          <div
+            className="sc-iAKWXU krUsll"
+          >
+            <div
+              className="sc-ikJyIC dNOZuk"
+            >
+              <div
+                className="sc-jJoQJp lfSWHh"
+              >
+                <div>
+                  <p
+                    className="sc-hiCibw dfEUYn"
+                  >
+                    todo2
+                  </p>
+                  <div
+                    className="sc-kLwhqv jakpon"
+                  >
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                    <div
+                      className="sc-bYoBSM ena-Ddx"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="sc-gWXbKe hBIlYO"
+              >
+                <button
+                  className="sc-cidDSM sc-caiLqq iOsXAI dBfrGd"
+                  onClick={[Function]}
+                >
+                  ...
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

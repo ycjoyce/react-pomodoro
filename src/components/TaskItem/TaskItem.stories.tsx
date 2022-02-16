@@ -8,6 +8,7 @@ export default {
   title: "TaskItem",
   component: TaskItem,
   args: {
+    id: "task1",
     opened: false,
     title: "test",
     recordLength: 5,
@@ -34,6 +35,7 @@ export const Default = Template.bind({});
 export const Opened = Template.bind({});
 Opened.args = {
   opened: true,
+  tomatoAmount: 5,
 };
 
 export const Done = Template.bind({});

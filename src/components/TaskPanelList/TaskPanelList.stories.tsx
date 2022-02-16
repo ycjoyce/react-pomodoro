@@ -13,9 +13,9 @@ const Template: Story<TaskPanelListProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   contents: [
-    { title: "test1", recordLength: 5, recordCompletedNumber: 2 },
-    { title: "test2", recordLength: 6 },
-    { title: "test3", recordLength: 3 },
+    { id: "task1", title: "test1", recordLength: 5, recordCompletedNumber: 2 },
+    { id: "task2", title: "test2", recordLength: 6 },
+    { id: "task3", title: "test3", recordLength: 3 },
   ],
 };
 

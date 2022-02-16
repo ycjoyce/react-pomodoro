@@ -18,9 +18,9 @@ Task.args = {
       list: (
         <TaskPanelList
           contents={[
-            { title: "todo 1", recordLength: 5 },
-            { title: "todo 2", recordLength: 5 },
-            { title: "todo 3", recordLength: 5 },
+            { id: "task1", title: "todo 1", recordLength: 5 },
+            { id: "task2", title: "todo 2", recordLength: 5 },
+            { id: "task3", title: "todo 3", recordLength: 5 },
           ]}
         />
       ),
@@ -30,9 +30,9 @@ Task.args = {
       list: (
         <TaskPanelList
           contents={[
-            { title: "done 1", recordLength: 5 },
-            { title: "done 2", recordLength: 5 },
-            { title: "done 3", recordLength: 5 },
+            { id: "task4", title: "done 1", recordLength: 5 },
+            { id: "task5", title: "done 2", recordLength: 5 },
+            { id: "task6", title: "done 3", recordLength: 5 },
           ]}
         />
       ),

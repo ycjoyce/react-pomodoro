@@ -5,26 +5,37 @@ import DoneTaskItemOperate from "../TaskItemOperate/Done/DoneTaskItemOperate";
 import StyledTaskItem from "./TaskItem.style";
 
 export interface Task {
+  id: string;
   title: string;
   recordLength: number; // 記錄的番茄數量
   recordCompletedNumber?: number;
+  done?: boolean;
 }
 
-export interface TaskItemProps extends Task {
+export interface TaskMethods {
+  onSave?: (id: string, title: string, tomato: number) => void;
+  onDelete?: (id: string) => void;
+  onRedo?: (id: string) => void;
+}
+
+export interface TaskItemProps extends Task, TaskMethods {
   opened?: boolean;
-  done?: boolean;
   tomatoAmount?: number; // 編輯的番茄數量
   onToggle?: (toOpen: boolean) => void;
 }
 
 const TaskItem: FC<TaskItemProps> = ({
   opened = false,
+  id,
   done = false,
   title,
   recordLength,
   recordCompletedNumber = 0,
   tomatoAmount = 0,
   onToggle = () => {},
+  onSave = () => {},
+  onDelete = () => {},
+  onRedo = () => {},
 }) => {
   const [taskTitle, setTaskTitle] = useState(title);
   const [selectedTomato, setSelectedTomato] = useState(tomatoAmount);
@@ -41,9 +52,17 @@ const TaskItem: FC<TaskItemProps> = ({
     setSelectedTomato(number);
   };
 
-  const handleDelete = () => {};
-  const handleSave = () => {};
-  const handleRedo = () => {};
+  const handleSave = () => {
+    onSave(id, taskTitle, selectedTomato);
+  };
+
+  const handleDelete = () => {
+    onDelete(id);
+  };
+
+  const handleRedo = () => {
+    onRedo(id);
+  };
 
   return (
     <StyledTaskItem>

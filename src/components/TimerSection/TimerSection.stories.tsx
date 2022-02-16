@@ -22,6 +22,7 @@ Default.args = {
 export const Task = Template.bind({});
 Task.args = {
   task: {
+    id: "task1",
     title: "Test",
     recordLength: 1,
     recordCompletedNumber: 0,

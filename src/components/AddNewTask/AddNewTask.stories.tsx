@@ -4,7 +4,7 @@ import AddNewTask, { AddNewTaskProps } from "./AddNewTask";
 import StyledDarkBackground from "../../styles/components/DarkBackground";
 
 export default {
-  title: "AddNewTask",
+  title: "OperateSection/AddNewTask",
   component: AddNewTask,
   decorators: [
     (story: () => React.ReactNode) => (
