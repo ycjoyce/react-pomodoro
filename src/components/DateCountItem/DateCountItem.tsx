@@ -22,6 +22,12 @@ export const weekdayMap: { [idx: number]: string } = {
   6: "SAT",
 };
 
+export const getDateString = (date: Date) => {
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  return `${month}/${day}`;
+};
+
 const DateCountItem: FC<DateCountItemProps> = ({ date, tomatoAmount }) => {
   const renderTomatoGroup = (amount: number) => {
     const tomatoes = [];
@@ -40,10 +46,9 @@ const DateCountItem: FC<DateCountItemProps> = ({ date, tomatoAmount }) => {
 
   const renderDate = (date: Date) => {
     const weekday = weekdayMap[date.getDay()];
-    const dateString = date.toLocaleDateString().substring(5);
     return (
       <StyledDate>
-        <StyledLabel>{dateString}</StyledLabel>
+        <StyledLabel>{getDateString(date)}</StyledLabel>
         <StyledLabel>{weekday}</StyledLabel>
       </StyledDate>
     );

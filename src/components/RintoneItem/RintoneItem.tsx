@@ -9,17 +9,22 @@ import {
   StyledTaskItemButton,
 } from "../TaskItemTitle/TaskItemTitle.style";
 
-export interface RingtoneItemProps {
-  checked?: boolean;
+export interface Ringtone {
+  id: string;
   title: string;
   ringtone: string;
+}
+
+export interface RingtoneItemProps extends Ringtone {
+  checked?: boolean;
   playing?: boolean;
-  onSelect?: (title: string) => void;
-  onAudioClick?: (nextPlaying: boolean) => void;
+  onSelect?: (id: string) => void;
+  onAudioClick?: (goingToPlay: boolean) => void;
 }
 
 const RingtoneItem: FC<RingtoneItemProps> = ({
   checked = false,
+  id,
   title,
   ringtone,
   playing = false,
@@ -28,7 +33,7 @@ const RingtoneItem: FC<RingtoneItemProps> = ({
 }) => {
   return (
     <StyledTaskItemTitleContainer>
-      <StyledTaskItemTitleBox onClick={() => onSelect(title)}>
+      <StyledTaskItemTitleBox onClick={() => onSelect(id)}>
         <StyledTaskItemDoneBox>
           <StyledCircle active={checked} />
         </StyledTaskItemDoneBox>

@@ -5,6 +5,8 @@ const StyledCountPanel = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: ${({ theme }) => theme.color.dark};
+  padding: 10px;
 
   & ${StyledCountPanelItem} {
     flex: 1 0 auto;

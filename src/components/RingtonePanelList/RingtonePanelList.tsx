@@ -5,26 +5,38 @@ import RingtoneItem, { RingtoneItemProps } from "../RintoneItem/RintoneItem";
 
 export interface RingtonePanelListProps {
   contents: RingtoneItemProps[];
+  checkedItem?: string;
+  onSelect?: (id: string) => void;
 }
 
-const RingtonePanelList: FC<RingtonePanelListProps> = ({ contents }) => {
-  const [checkedItem, setCheckedItem] = useState("");
+const RingtonePanelList: FC<RingtonePanelListProps> = ({
+  contents,
+  checkedItem = "",
+  onSelect = () => {},
+}) => {
+  const [checkedRingtoneItem, setCheckedRingtoneItem] = useState(checkedItem);
   const [playingItem, setPlayingItem] = useState("");
 
   const renderItems = (contents: RingtoneItemProps[]) => {
-    const handleAudioClick = (title: string, nextPlaying: boolean) => {
-      setPlayingItem(nextPlaying ? title : "");
+    const handleAudioClick = (id: string, goingToPlay: boolean) => {
+      setPlayingItem(goingToPlay ? id : "");
     };
 
-    return contents.map(({ title, ringtone }) => (
-      <PanelItem key={title}>
+    const handleSelect = (id: string) => {
+      setCheckedRingtoneItem(id);
+      onSelect(id);
+    };
+
+    return contents.map(({ id, title, ringtone }) => (
+      <PanelItem key={id}>
         <RingtoneItem
+          id={id}
           title={title}
           ringtone={ringtone}
-          checked={title === checkedItem}
-          playing={title === playingItem}
-          onSelect={setCheckedItem}
-          onAudioClick={(nextPlaying) => handleAudioClick(title, nextPlaying)}
+          checked={id === checkedRingtoneItem}
+          playing={id === playingItem}
+          onSelect={handleSelect}
+          onAudioClick={(goingToPlay) => handleAudioClick(id, goingToPlay)}
         />
       </PanelItem>
     ));

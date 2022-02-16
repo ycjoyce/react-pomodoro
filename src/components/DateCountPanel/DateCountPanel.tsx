@@ -4,7 +4,19 @@ import StyledDateCountPanel from "./DateCountPanel.style";
 
 export interface DateCountPanelProps {
   today?: Date;
+  getTomato: (date: Date) => number;
 }
+
+/**
+ * 取得與初始日期間隔指定天數的date
+ * @param origianl 初始的 date
+ * @param day 要取得間隔幾天的 date
+ * @returns
+ */
+export const addDays = (origianl: Date, day: number): Date => {
+  const ms = day * 24 * 60 * 60 * 1000;
+  return new Date(new Date().setTime(origianl.getTime() + ms));
+};
 
 /**
  * 由今日日期取得本週所有日期
@@ -12,10 +24,6 @@ export interface DateCountPanelProps {
  * @returns
  */
 export const getWeekDates = (today: Date): Date[] => {
-  const addDays = (origianl: Date, day: number): Date => {
-    return new Date(new Date().setDate(origianl.getDate() + day));
-  };
-
   const dates: Date[] = new Array(7);
   const todayWeekday = today.getDay();
 
@@ -32,12 +40,15 @@ export const getWeekDates = (today: Date): Date[] => {
   return dates;
 };
 
-const DateCountPanel: FC<DateCountPanelProps> = ({ today = new Date() }) => {
+const DateCountPanel: FC<DateCountPanelProps> = ({
+  today = new Date(),
+  getTomato,
+}) => {
   const renderItems = (dates: Date[]) => {
     return dates.map((date) => (
       <DateCountItem
         date={date}
-        tomatoAmount={date.getDay()} // temp
+        tomatoAmount={getTomato(date)}
         key={date.toString()}
       />
     ));

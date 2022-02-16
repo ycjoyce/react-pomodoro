@@ -63,16 +63,20 @@ Ringtone.args = {
         <RingtonePanelList
           contents={[
             {
+              id: "ringtone1",
               title: "test1",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
             },
             {
+              id: "ringtone2",
+
               title: "test2",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
             },
             {
+              id: "ringtone3",
               title: "test3",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
@@ -87,16 +91,19 @@ Ringtone.args = {
         <RingtonePanelList
           contents={[
             {
+              id: "ringtone4",
               title: "test4",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
             },
             {
+              id: "ringtone5",
               title: "test5",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
             },
             {
+              id: "ringtone6",
               title: "test6",
               ringtone:
                 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
