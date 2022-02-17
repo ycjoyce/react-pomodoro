@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Modal from "../Modal/Modal";
 import Button from "../Button/Button";
 import { StyledButtonGroup } from "../Button/Button.style";
-import StyledDoneModal, { StyledTitle } from "./DoneModal.style";
+import { StyledTitle, StyledContentBox } from "../Modal/Modal.style";
 
 export interface DoneModalProps {
   type: "task" | "break";
@@ -18,7 +18,7 @@ const DoneModal: FC<DoneModalProps> = ({
   onTask = () => {},
 }) => (
   <Modal>
-    <StyledDoneModal>
+    <StyledContentBox>
       <StyledTitle>
         {type === "task" ? "Task Done" : "Break time is over"}
       </StyledTitle>
@@ -43,7 +43,7 @@ const DoneModal: FC<DoneModalProps> = ({
           </Button>
         )}
       </StyledButtonGroup>
-    </StyledDoneModal>
+    </StyledContentBox>
 
     {ringtone && <audio src={ringtone} autoPlay />}
   </Modal>

@@ -4,15 +4,15 @@ import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
 import OperateRoutes from "../OperateRoutes/OperateRoutes";
-import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
 import { PageButtonProps } from "../PageButton/PageButton";
-import Modal from "../Modal/Modal";
+import AddTaskModal from "../AddTaskModal/AddTaskModal";
+import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
 
 const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [modal, setModal] = useState("");
+  const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
 
   const generatePage = (page: PageButtonProps["page"]) => ({
     page,
@@ -57,11 +57,11 @@ const App: FC = () => {
         </StyledOperate>
       </StyledApp>
 
-      {modal === "task-fail" && (
-        <Modal onClose={() => setModal("")}>fail</Modal>
-      )}
-      {modal === "task-success" && (
-        <Modal onClose={() => setModal("")}>success</Modal>
+      {modal.startsWith("task") && (
+        <AddTaskModal
+          success={modal === "task-success"}
+          onClose={() => setModal("")}
+        />
       )}
     </>
   );

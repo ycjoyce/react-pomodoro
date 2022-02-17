@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { StyledButtonGroup } from "../Button/Button.style";
 
 export const StyledModalBackground = styled.div`
   background-color: ${({ theme }) => theme.color.dark};
@@ -28,6 +29,22 @@ const StyledModal = styled.div`
   height: 100vh;
   left: 0;
   top: 0;
+`;
+
+export const StyledTitle = styled.p`
+  font-size: ${({ theme }) => theme.font[2]};
+`;
+
+export const StyledContentBox = styled.div`
+  text-align: center;
+
+  & ${StyledTitle} {
+    margin-bottom: 20px;
+  }
+
+  & ${StyledButtonGroup} {
+    margin-top: 80px;
+  }
 `;
 
 export default StyledModal;
