@@ -1,9 +1,10 @@
-import React, { FC } from "react";
+import React, { FC, useState, useEffect } from "react";
 import DateCountItem from "../DateCountItem/DateCountItem";
 import StyledDateCountPanel from "./DateCountPanel.style";
 
 export interface DateCountPanelProps {
   today?: Date;
+  // getTomato: (date: Date) => Promise<number>;
   getTomato: (date: Date) => number;
 }
 
@@ -44,14 +45,25 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
   today = new Date(),
   getTomato,
 }) => {
+  //   const [tomatoAmount, setTomatoAmount] = useState(0);
+  //
+  //   const setTomato = async (date: Date) => {
+  //     const count = await getTomato(date);
+  //     setTomatoAmount(count);
+  //   };
+
   const renderItems = (dates: Date[]) => {
-    return dates.map((date) => (
-      <DateCountItem
-        date={date}
-        tomatoAmount={getTomato(date)}
-        key={date.toString()}
-      />
-    ));
+    return dates.map((date) => {
+      // setTomato(date);
+      return (
+        <DateCountItem
+          date={date}
+          // tomatoAmount={tomatoAmount}
+          tomatoAmount={getTomato(date)}
+          key={date.toString()}
+        />
+      );
+    });
   };
 
   return (

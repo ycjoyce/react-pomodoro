@@ -1,6 +1,14 @@
 import React, { FC, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import connect from "../../apis/connect";
 import useInit from "../../hooks/useInit";
+import { useAppSelector, useAppDispatch } from "../../store/hooks";
+import {
+  createTask,
+  updateTask,
+  removeTask,
+  Record,
+} from "../../store/reducers/task";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -8,11 +16,11 @@ import OperateRoutes from "../OperateRoutes/OperateRoutes";
 import { PageButtonProps } from "../PageButton/PageButton";
 import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
-import { useAppSelector } from "../../store/hooks";
 
 const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useAppDispatch();
   const tasks = useAppSelector((state) => state.tasks.value);
 
   useInit();
@@ -38,7 +46,37 @@ const App: FC = () => {
       setModal("task-fail");
       return;
     }
+    dispatch(createTask({ title, length: tomato }));
     setModal("task-success");
+  };
+
+  const handleEditTask = (id: string, title: string, tomato: number) => {
+    dispatch(updateTask({ id, title, length: tomato }));
+  };
+
+  const handleDeleteTask = (id: string) => {
+    dispatch(removeTask(id));
+  };
+
+  const handleRedoTask = (id: string) => {
+    dispatch(updateTask({ id, completed: false }));
+  };
+
+  const getTomato = async (date: Date) => {
+    //     const year = date.getFullYear();
+    //     const month = date.getMonth() + 1;
+    //     const day = date.getDate();
+    //
+    //     const { data } = await connect({
+    //       path: `/records?date=${year}-${month}-${day}`,
+    //     });
+    //
+    //     let count = 0;
+    //
+    //     data.forEach((record: Record) => (count += record.count));
+    //
+    //     return count;
+    return 0;
   };
 
   return (
@@ -57,7 +95,14 @@ const App: FC = () => {
               generatePage("ringtone"),
             ]}
           >
-            <OperateRoutes tasks={tasks} onSaveNewTask={handleSaveNewTask} />
+            <OperateRoutes
+              tasks={tasks}
+              getTomato={() => 0}
+              onSaveNewTask={handleSaveNewTask}
+              onEditTask={handleEditTask}
+              onDeleteTask={handleDeleteTask}
+              onRedoTask={handleRedoTask}
+            />
           </OperateSection>
         </StyledOperate>
       </StyledApp>

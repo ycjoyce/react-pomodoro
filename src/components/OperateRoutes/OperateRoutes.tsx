@@ -14,6 +14,9 @@ export interface OperateRoutesProps {
   getTomato?: AnalyticsReportProps["getTomato"];
   onSaveNewTask?: AddNewTaskProps["onSave"];
   onSelectRingtone?: RingtoneProps["onSelect"];
+  onEditTask?: TaskListProps["onSave"];
+  onDeleteTask?: TaskListProps["onDelete"];
+  onRedoTask?: TaskListProps["onRedo"];
 }
 
 const OperateRoutes: FC<OperateRoutesProps> = ({
@@ -23,6 +26,9 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
   getTomato = () => 0,
   onSaveNewTask = () => {},
   onSelectRingtone = () => {},
+  onEditTask = () => {},
+  onDeleteTask = () => {},
+  onRedoTask = () => {},
 }) => {
   const Routes = () =>
     useRoutes([
@@ -32,7 +38,14 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
       },
       {
         path: "/list",
-        element: <TaskList tasks={tasks} />,
+        element: (
+          <TaskList
+            tasks={tasks}
+            onSave={onEditTask}
+            onDelete={onDeleteTask}
+            onRedo={onRedoTask}
+          />
+        ),
       },
       {
         path: "/analysis",
