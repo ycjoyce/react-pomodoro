@@ -27,10 +27,6 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
   const Routes = () =>
     useRoutes([
       {
-        path: "/",
-        element: <AddNewTask onSave={onSaveNewTask} />,
-      },
-      {
         path: "/add",
         element: <AddNewTask onSave={onSaveNewTask} />,
       },

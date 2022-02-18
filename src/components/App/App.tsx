@@ -1,5 +1,7 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+// import { machineId } from "node-machine-id";
+import { DeviceUUID } from "device-uuid";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -7,6 +9,7 @@ import OperateRoutes from "../OperateRoutes/OperateRoutes";
 import { PageButtonProps } from "../PageButton/PageButton";
 import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
+import login from "../../utils/login";
 
 const App: FC = () => {
   const navigate = useNavigate();
@@ -35,6 +38,12 @@ const App: FC = () => {
     }
     setModal("task-success");
   };
+
+  useEffect(() => {
+    login(new DeviceUUID().get())
+      .then((token) => console.log(token))
+      .catch((e) => console.error("ERROR", e));
+  }, []);
 
   return (
     <>
