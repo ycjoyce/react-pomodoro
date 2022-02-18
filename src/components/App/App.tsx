@@ -1,7 +1,6 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-// import { machineId } from "node-machine-id";
-import { DeviceUUID } from "device-uuid";
+import useInit from "../../hooks/useInit";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -9,11 +8,14 @@ import OperateRoutes from "../OperateRoutes/OperateRoutes";
 import { PageButtonProps } from "../PageButton/PageButton";
 import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
-import login from "../../utils/login";
+import { useAppSelector } from "../../store/hooks";
 
 const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const tasks = useAppSelector((state) => state.tasks.value);
+
+  useInit();
 
   const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
 
@@ -39,12 +41,6 @@ const App: FC = () => {
     setModal("task-success");
   };
 
-  useEffect(() => {
-    login(new DeviceUUID().get())
-      .then((token) => console.log(token))
-      .catch((e) => console.error("ERROR", e));
-  }, []);
-
   return (
     <>
       <StyledApp>
@@ -61,7 +57,7 @@ const App: FC = () => {
               generatePage("ringtone"),
             ]}
           >
-            <OperateRoutes tasks={[]} onSaveNewTask={handleSaveNewTask} />
+            <OperateRoutes tasks={tasks} onSaveNewTask={handleSaveNewTask} />
           </OperateSection>
         </StyledOperate>
       </StyledApp>

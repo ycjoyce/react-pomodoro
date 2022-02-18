@@ -9,7 +9,7 @@ export const createUser = async (device: string): Promise<string> => {
   try {
     const {
       data: { token },
-    } = await connect("/users", "post", { device });
+    } = await connect({ path: "/users", type: "post", data: { device } });
     return token;
   } catch {
     return "";
@@ -23,7 +23,11 @@ export const createUser = async (device: string): Promise<string> => {
  */
 const login = async (device: string) => {
   try {
-    const response = await connect("/users/login", "post", { device });
+    const response = await connect({
+      path: "/users/login",
+      type: "post",
+      data: { device },
+    });
     return response.data.token;
   } catch (e) {
     return await createUser(device);
