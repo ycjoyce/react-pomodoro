@@ -4,8 +4,8 @@ import StyledDateCountPanel from "./DateCountPanel.style";
 
 export interface DateCountPanelProps {
   today?: Date;
-  // getTomato: (date: Date) => Promise<number>;
-  getTomato: (date: Date) => number;
+  getTomato: (date: Date) => Promise<number>;
+  // getTomato: (date: Date) => number;
 }
 
 /**
@@ -45,22 +45,34 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
   today = new Date(),
   getTomato,
 }) => {
-  //   const [tomatoAmount, setTomatoAmount] = useState(0);
-  //
-  //   const setTomato = async (date: Date) => {
-  //     const count = await getTomato(date);
-  //     setTomatoAmount(count);
-  //   };
+  const [tomatoAmounts, setTomatoAmounts] = useState<{
+    [date: string]: number;
+  }>({});
+
+  useEffect(() => {
+    const setTomato = async (date: Date) => {
+      const count = await getTomato(date);
+      // console.log("call date count");
+      setTomatoAmounts((original) => {
+        return {
+          ...original,
+          [date.toLocaleDateString()]: count,
+        };
+      });
+    };
+
+    getWeekDates(today).forEach((date) => {
+      setTomato(date);
+    });
+  }, [today, getTomato]);
 
   const renderItems = (dates: Date[]) => {
     return dates.map((date) => {
-      // setTomato(date);
       return (
         <DateCountItem
           date={date}
-          // tomatoAmount={tomatoAmount}
-          tomatoAmount={getTomato(date)}
-          key={date.toString()}
+          tomatoAmount={tomatoAmounts[date.toLocaleDateString()] || 0}
+          key={date.toLocaleDateString()}
         />
       );
     });

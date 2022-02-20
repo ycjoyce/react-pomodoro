@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useMemo, useEffect } from "react";
 import { useRoutes } from "react-router-dom";
 import AddNewTask, { AddNewTaskProps } from "../AddNewTask/AddNewTask";
 import Ringtone, { RingtoneProps } from "../Ringtone/Ringtone";
@@ -23,13 +23,22 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
   tasks = [],
   ringtones = { work: [], break: [] },
   checkedRingtone = { work: "", break: "" },
-  getTomato = () => 0,
+  getTomato = () => Promise.resolve(0),
   onSaveNewTask = () => {},
   onSelectRingtone = () => {},
   onEditTask = () => {},
   onDeleteTask = () => {},
   onRedoTask = () => {},
 }) => {
+  const MemoAnalyticsReport = useMemo(
+    () => <AnalyticsReport getTomato={getTomato} />,
+    [getTomato]
+  );
+
+  // useEffect(() => {
+  //   console.log(getTomato);
+  // }, [getTomato]);
+
   const Routes = () =>
     useRoutes([
       {
@@ -49,7 +58,7 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
       },
       {
         path: "/analysis",
-        element: <AnalyticsReport getTomato={getTomato} />,
+        element: MemoAnalyticsReport,
       },
       {
         path: "/ringtone",

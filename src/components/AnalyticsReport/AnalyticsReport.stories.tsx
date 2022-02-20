@@ -19,9 +19,18 @@ const Template: Story<AnalyticsReportProps> = (args) => (
   <AnalyticsReport {...args} />
 );
 
+const count = (n: number): Promise<number> => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(Math.floor((n / 2) * 5));
+    }, 500);
+  });
+};
+
 export const Default = Template.bind({});
 Default.args = {
-  getTomato(date: Date) {
-    return date.getDay();
+  getTomato(date) {
+    // console.log(date);
+    return count(date.getDay());
   },
 };

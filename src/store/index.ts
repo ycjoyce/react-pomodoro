@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import tokenReducer from "./reducers/token";
 import taskReducer from "./reducers/task";
+import recordReducer from "./reducers/record";
 
 const store = configureStore({
   reducer: {
     token: tokenReducer,
     tasks: taskReducer,
+    records: recordReducer,
   },
 });
 

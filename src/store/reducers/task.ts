@@ -2,11 +2,7 @@ import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import connect from "../../apis/connect";
 import { Task } from "../../components/TaskItem/TaskItem";
 import { convertTask } from "../../utils/convert";
-
-export interface Record {
-  date: string;
-  count: number;
-}
+import { Record } from "./record";
 
 export interface FetchedTask {
   _id: string;

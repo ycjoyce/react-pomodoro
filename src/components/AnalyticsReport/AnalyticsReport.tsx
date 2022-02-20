@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect, useRef } from "react";
 import Title from "../Title/Title";
 import Label from "../Label/Label";
 import CountPanel from "../CountPanel/CountPanel";
@@ -17,26 +17,53 @@ export interface AnalyticsReportProps {
 }
 
 const AnalyticsReport: FC<AnalyticsReportProps> = ({ getTomato }) => {
-  const today = new Date();
-  const [targetDate, setTargetDate] = useState(today);
+  const today = useRef(new Date());
+  const [targetDate, setTargetDate] = useState(today.current);
+  const [todayCount, setTodayCount] = useState(0);
+  const [weekCount, setWeekCount] = useState(0);
+
+  useEffect(() => {
+    const getWeekCount = async (date: Date) => {
+      const counts = await Promise.all(
+        getWeekDates(date).map((d) => getTomato(d))
+      );
+      return counts.reduce((a, e) => (a += e));
+    };
+
+    getTomato(today.current).then((count) => {
+      setTodayCount(count);
+      // console.log("call");
+    });
+    getWeekCount(today.current).then((count) => setWeekCount(count));
+  }, [getTomato]);
 
   const getWeekString = (targetDate: Date) => {
     const weekDates = getWeekDates(targetDate);
     return `${getDateString(weekDates[0])}-${getDateString(weekDates[6])}`;
   };
 
-  const getWeekCount = (date: Date) =>
-    getWeekDates(date)
-      .map((d) => getTomato(d))
-      .reduce((a, e) => (a += e));
+  // const getWeekCount = (date: Date) =>
+  //   getWeekDates(date)
+  //     .map((d) => getTomato(d))
+  //     .reduce((a, e) => (a += e));
 
   const handlePrev = () => {
-    setTargetDate((d) => addDays(d, -7));
+    setTargetDate((d) => {
+      console.log("prev", d);
+      return addDays(d, -7);
+    });
   };
 
   const handleNext = () => {
-    setTargetDate((d) => addDays(d, 7));
+    setTargetDate((d) => {
+      console.log("next", d);
+      return addDays(d, 7);
+    });
   };
+
+  // useEffect(() => {
+  //   console.log(targetDate);
+  // }, [targetDate]);
 
   return (
     <StyledOperate>
@@ -46,10 +73,15 @@ const AnalyticsReport: FC<AnalyticsReportProps> = ({ getTomato }) => {
         <Label>tomatoes of this week</Label>
         <CountPanel
           items={[
-            { count: getTomato(today), label: "today" },
             {
-              count: getWeekCount(today),
-              label: getWeekString(today),
+              // count: getTomato(today.current),
+              count: todayCount,
+              label: "today",
+            },
+            {
+              // count: getWeekCount(today.current),
+              count: weekCount,
+              label: getWeekString(today.current),
             },
           ]}
         />

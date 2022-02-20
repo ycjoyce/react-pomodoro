@@ -19,9 +19,17 @@ const Template: Story<DateCountPanelProps> = (args) => (
   <DateCountPanel {...args} />
 );
 
+const count = (n: number): Promise<number> => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(Math.floor((n / 2) * 5));
+    }, 500);
+  });
+};
+
 export const Default = Template.bind({});
 Default.args = {
   getTomato(date) {
-    return date.getDay();
+    return count(date.getDay());
   },
 };

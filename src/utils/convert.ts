@@ -1,4 +1,5 @@
-import { FetchedTask, Record } from "../store/reducers/task";
+import { FetchedTask } from "../store/reducers/task";
+import { Record } from "../store/reducers/record";
 import { Task } from "../components/TaskItem/TaskItem";
 import connect from "../apis/connect";
 
