@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from "react";
 import DateCountItem from "../DateCountItem/DateCountItem";
 import StyledDateCountPanel from "./DateCountPanel.style";
+import { dateKey } from "../../utils/convert";
 
 export interface DateCountPanelProps {
   today?: Date;
@@ -52,11 +53,10 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
   useEffect(() => {
     const setTomato = async (date: Date) => {
       const count = await getTomato(date);
-      // console.log("call date count");
       setTomatoAmounts((original) => {
         return {
           ...original,
-          [date.toLocaleDateString()]: count,
+          [dateKey(date)]: count,
         };
       });
     };
@@ -64,6 +64,10 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
     getWeekDates(today).forEach((date) => {
       setTomato(date);
     });
+
+    return () => {
+      setTomatoAmounts({});
+    };
   }, [today, getTomato]);
 
   const renderItems = (dates: Date[]) => {
@@ -71,7 +75,7 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
       return (
         <DateCountItem
           date={date}
-          tomatoAmount={tomatoAmounts[date.toLocaleDateString()] || 0}
+          tomatoAmount={tomatoAmounts[dateKey(date)] || 0}
           key={date.toLocaleDateString()}
         />
       );

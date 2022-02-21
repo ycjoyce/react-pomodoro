@@ -24,3 +24,7 @@ export const convertTask = async (task: FetchedTask): Promise<Task> => {
     recordCompletedNumber: count,
   };
 };
+
+export const dateKey = (date: Date) => {
+  return date.toLocaleDateString();
+};

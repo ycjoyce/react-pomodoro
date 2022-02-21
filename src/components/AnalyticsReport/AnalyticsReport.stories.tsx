@@ -30,7 +30,6 @@ const count = (n: number): Promise<number> => {
 export const Default = Template.bind({});
 Default.args = {
   getTomato(date) {
-    // console.log(date);
     return count(date.getDay());
   },
 };

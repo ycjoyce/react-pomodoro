@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import connect from "../../apis/connect";
+import { dateKey } from "../../utils/convert";
 
 export interface Record {
   date: string;
@@ -27,14 +28,14 @@ export const fetchRecordsOfDate = createAsyncThunk(
     const day = date.getDate();
 
     if (loading !== "pending" || requestId !== currentRequestId) {
-      return { date: date.toLocaleDateString(), records: [] };
+      return { date: dateKey(date), records: [] };
     }
 
     const response = await connect({
       path: `/records?date=${year}-${month}-${day}`,
     });
 
-    return { date: date.toLocaleDateString(), records: response.data };
+    return { date: dateKey(date), records: response.data };
   }
 );
 
@@ -52,7 +53,7 @@ export const recordSlice = createSlice({
     setDate(state, action) {
       state.dates = {
         ...state.dates,
-        [action.payload.date.toLocaleDateString()]: [],
+        [dateKey(action.payload.date)]: [],
       };
     },
   },

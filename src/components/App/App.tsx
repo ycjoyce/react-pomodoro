@@ -1,10 +1,8 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import connect from "../../apis/connect";
 import useInit from "../../hooks/useInit";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { createTask, updateTask, removeTask } from "../../store/reducers/task";
-import { Record, fetchRecordsOfDate } from "../../store/reducers/record";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -18,7 +16,7 @@ const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useAppDispatch();
-  const { token, tasks, records } = useAppSelector((state) => {
+  const { tasks } = useAppSelector((state) => {
     return {
       token: state.token.value,
       tasks: state.tasks.value,
@@ -66,10 +64,6 @@ const App: FC = () => {
   };
 
   const getTomato = useFetchRecords();
-
-  // useEffect(() => {
-  //   console.log(getTomato);
-  // }, [getTomato]);
 
   return (
     <>

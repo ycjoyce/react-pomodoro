@@ -1,5 +1,7 @@
+import { useCallback } from "react";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { fetchRecordsOfDate, Record } from "../store/reducers/record";
+import { dateKey } from "../utils/convert";
 
 const useFetchRecords = () => {
   const dispatch = useAppDispatch();
@@ -12,15 +14,18 @@ const useFetchRecords = () => {
     return count;
   };
 
-  const countRecordsOfDate = async (date: Date) => {
-    if (!token) {
-      return 0;
-    }
-    if (!records[date.toLocaleDateString()]) {
-      dispatch(fetchRecordsOfDate(date));
-    }
-    return sum(records[date.toLocaleDateString()] || []);
-  };
+  const countRecordsOfDate = useCallback(
+    async (date: Date) => {
+      if (!token) {
+        return 0;
+      }
+      if (!records[dateKey(date)]) {
+        dispatch(fetchRecordsOfDate(date));
+      }
+      return sum(records[dateKey(date)] || []);
+    },
+    [dispatch, records, token]
+  );
 
   return countRecordsOfDate;
 };
