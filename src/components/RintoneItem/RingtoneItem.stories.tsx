@@ -3,13 +3,16 @@ import { Story } from "@storybook/react/types-6-0";
 import { useArgs } from "@storybook/client-api";
 import RingtoneItem, { RingtoneItemProps } from "./RintoneItem";
 import StyledDarkBackground from "../../styles/components/DarkBackground";
+import ringtones from "../../ringtones";
+
+const [{ title, ringtone }] = ringtones;
 
 export default {
   title: "RingtoneItem",
   component: RingtoneItem,
   args: {
-    title: "test",
-    ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3",
+    title,
+    ringtone,
     playing: false,
     checked: false,
   },

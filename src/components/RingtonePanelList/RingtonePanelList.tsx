@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import PanelList from "../PanelList/PanelList";
 import PanelItem from "../PanelItem/PanelItem";
 import RingtoneItem, { RingtoneItemProps } from "../RintoneItem/RintoneItem";
@@ -14,8 +14,12 @@ const RingtonePanelList: FC<RingtonePanelListProps> = ({
   checkedItem = "",
   onSelect = () => {},
 }) => {
-  const [checkedRingtoneItem, setCheckedRingtoneItem] = useState(checkedItem);
+  const [checkedRingtoneItem, setCheckedRingtoneItem] = useState("");
   const [playingItem, setPlayingItem] = useState("");
+
+  useEffect(() => {
+    setCheckedRingtoneItem(checkedItem);
+  }, [checkedItem]);
 
   const renderItems = (contents: RingtoneItemProps[]) => {
     const handleAudioClick = (id: string, goingToPlay: boolean) => {

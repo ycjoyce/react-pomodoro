@@ -1,6 +1,8 @@
 import { FetchedTask } from "../store/reducers/task";
 import { Record } from "../store/reducers/record";
 import { Task } from "../components/TaskItem/TaskItem";
+import { Ringtone } from "../components/RintoneItem/RintoneItem";
+import { FetchRingtone } from "../store/reducers/ringtone";
 import connect from "../apis/connect";
 
 const fetchRecords = async (task: string): Promise<Record[]> => {
@@ -27,4 +29,12 @@ export const convertTask = async (task: FetchedTask): Promise<Task> => {
 
 export const dateKey = (date: Date) => {
   return date.toLocaleDateString();
+};
+
+export const convertRingtone = (ringtone: FetchRingtone): Ringtone => {
+  return {
+    id: ringtone._id,
+    title: ringtone.title,
+    ringtone: ringtone.audio,
+  };
 };

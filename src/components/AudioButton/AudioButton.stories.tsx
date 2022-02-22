@@ -3,6 +3,7 @@ import { Story } from "@storybook/react/types-6-0";
 import { useArgs } from "@storybook/client-api";
 import AudioButton, { AudioButtonProps } from "./AudioButton";
 import StyledDarkBackground from "../../styles/components/DarkBackground";
+import ringtones from "../../ringtones";
 
 export default {
   title: "AudioButton",
@@ -28,7 +29,7 @@ const Template: Story<AudioButtonProps> = (args) => {
 };
 
 const defaultArgs = {
-  audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3",
+  audio: ringtones[0].ringtone,
 };
 
 export const Default = Template.bind({});

@@ -1,8 +1,10 @@
 import React, { FC, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import useInit from "../../hooks/useInit";
+import useFetchRecords from "../../hooks/useFetchRecords";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { createTask, updateTask, removeTask } from "../../store/reducers/task";
+import { saveCheckedRingtone } from "../../store/reducers/ringtone";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -10,23 +12,26 @@ import OperateRoutes from "../OperateRoutes/OperateRoutes";
 import { PageButtonProps } from "../PageButton/PageButton";
 import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
-import useFetchRecords from "../../hooks/useFetchRecords";
+import { WorkType } from "../Ringtone/Ringtone";
 
 const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useAppDispatch();
-  const { tasks } = useAppSelector((state) => {
+  const {
+    tasks,
+    ringtones: { ringtones, checked: checkedRingtones },
+  } = useAppSelector((state) => {
     return {
       token: state.token.value,
       tasks: state.tasks.value,
       records: state.records.dates,
+      ringtones: state.ringtones,
     };
   });
+  const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
 
   useInit();
-
-  const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
 
   const generatePage = (page: PageButtonProps["page"]) => ({
     page,
@@ -65,6 +70,10 @@ const App: FC = () => {
 
   const getTomato = useFetchRecords();
 
+  const handleSelectRingtone = (type: WorkType, id: string) => {
+    dispatch(saveCheckedRingtone({ type, id }));
+  };
+
   return (
     <>
       <StyledApp>
@@ -83,11 +92,14 @@ const App: FC = () => {
           >
             <OperateRoutes
               tasks={tasks}
+              ringtones={ringtones}
+              checkedRingtone={checkedRingtones}
               getTomato={getTomato}
               onSaveNewTask={handleSaveNewTask}
               onEditTask={handleEditTask}
               onDeleteTask={handleDeleteTask}
               onRedoTask={handleRedoTask}
+              onSelectRingtone={handleSelectRingtone}
             />
           </OperateSection>
         </StyledOperate>

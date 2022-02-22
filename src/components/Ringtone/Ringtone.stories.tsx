@@ -3,24 +3,7 @@ import { Story } from "@storybook/react/types-6-0";
 import { useArgs } from "@storybook/client-api";
 import Ringtone, { RingtoneProps, WorkType } from "./Ringtone";
 import StyledDarkBackground from "../../styles/components/DarkBackground";
-
-const ringtones = [
-  {
-    id: "ringtone1",
-    title: "test1",
-    ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-  },
-  {
-    id: "ringtone2",
-    title: "test2",
-    ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-  },
-  {
-    id: "ringtone3",
-    title: "test3",
-    ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-  },
-];
+import ringtones from "../../ringtones";
 
 export default {
   title: "OperateSection/Ringtone",

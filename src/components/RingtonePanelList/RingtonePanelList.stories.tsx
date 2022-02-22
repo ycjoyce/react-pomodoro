@@ -1,5 +1,6 @@
 import { Story } from "@storybook/react/types-6-0";
 import RingtonePanelList, { RingtonePanelListProps } from "./RingtonePanelList";
+import ringtones from "../../ringtones";
 
 export default {
   title: "RingtonePanelList",
@@ -12,21 +13,5 @@ const Template: Story<RingtonePanelListProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  contents: [
-    {
-      id: "ringtone1",
-      title: "test1",
-      ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    },
-    {
-      id: "ringtone2",
-      title: "test2",
-      ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    },
-    {
-      id: "ringtone3",
-      title: "test3",
-      ringtone: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-    },
-  ],
+  contents: ringtones,
 };
