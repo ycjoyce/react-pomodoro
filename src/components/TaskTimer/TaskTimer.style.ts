@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { StyledCircle as StyledPie } from "../Pie/Pie.style";
 import StyledRecord from "../../styles/components/Circle";
+import { mobileLandscape } from "../../styles/abstracts/mixin";
 
 export const StyledTitleBox = styled.div`
   & ${StyledRecord} {
@@ -50,6 +51,10 @@ const StyledTaskTimer = styled.div`
     margin: 0 auto;
     margin-bottom: 30px;
     width: 300px;
+  }
+
+  ${mobileLandscape} {
+    padding: 30px;
   }
 `;
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StyledButtonGroup } from "../Button/Button.style";
+import { mobile } from "../../styles/abstracts/mixin";
 
 export const StyledModalBackground = styled.div`
   background-color: ${({ theme }) => theme.color.dark};
@@ -21,6 +22,11 @@ export const StyledModalContent = styled.div`
   padding: 50px;
   border-radius: 5px;
   transform: translate(-50%, -50%);
+
+  ${mobile} {
+    width: 80%;
+    padding: 30px;
+  }
 `;
 
 const StyledModal = styled.div`

@@ -1,8 +1,11 @@
 import styled, { css } from "styled-components";
 import StyledLabel from "../Label/Label.style";
-import StyledToggleButton from "../ToggleButton/ToggleButton.style";
+import { StyledPrimaryButton } from "../ToggleButton/ToggleButton.style";
+import StyledPageButton from "../PageButton/PageButton.style";
+import { mobile, mobileLandscape } from "../../styles/abstracts/mixin";
 
-const barWidth = 80;
+export const barWidth = 80;
+export const mobileBarWidth = 60;
 
 export const StyledOperate = styled.div`
   & > *:not(:last-child) {
@@ -17,6 +20,23 @@ export const StyledOperate = styled.div`
 export const StyledSection = styled.div`
   display: flex;
   height: 100%;
+
+  ${mobile} {
+    flex-direction: column-reverse;
+  }
+`;
+
+const mobileToggleButton = `
+  left: 0;
+  bottom: 70px;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 0 15px 15px 0;
+
+  [data-image="tomato"] {
+    display: none;
+  }
 `;
 
 export const StyledBar = styled.div`
@@ -25,10 +45,37 @@ export const StyledBar = styled.div`
   position: relative;
   border-right: 1px solid #000;
 
-  & ${StyledToggleButton} {
+  & ${StyledPrimaryButton} {
     position: absolute;
     bottom: 80px;
     left: -40px;
+  }
+
+  ${mobileLandscape} {
+    width: ${mobileBarWidth}px;
+
+    & ${StyledPrimaryButton} {
+      ${mobileToggleButton}
+      bottom: 20px;
+    }
+
+    & ${StyledPageButton} {
+      width: ${mobileBarWidth}px;
+      height: ${mobileBarWidth}px;
+    }
+  }
+
+  ${mobile} {
+    height: ${barWidth}px;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+
+    & ${StyledPrimaryButton} {
+      ${mobileToggleButton}
+    }
   }
 `;
 
@@ -36,6 +83,7 @@ export const StyledOperateBox = styled.div<{ opened?: boolean }>`
   flex: 1 1 auto;
   padding: 30px;
   width: calc(50vw - ${barWidth}px);
+  overflow-y: scroll;
   ${({ opened }) => {
     if (!opened) {
       return css`
@@ -43,4 +91,21 @@ export const StyledOperateBox = styled.div<{ opened?: boolean }>`
       `;
     }
   }}
+
+  ${mobileLandscape} {
+    padding: 20px 10px;
+  }
+
+  ${mobile} {
+    width: 100%;
+    height: calc(100vh - ${barWidth}px);
+
+    ${({ opened }) => {
+      if (!opened) {
+        return css`
+          background-color: red;
+        `;
+      }
+    }}
+  }
 `;

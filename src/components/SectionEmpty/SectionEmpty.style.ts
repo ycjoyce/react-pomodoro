@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import tomatoIcon from "../../images/tomato_small_color.svg";
+import { mobileLandscape } from "../../styles/abstracts/mixin";
 
 export const StyledLogo = styled.div`
   width: 300px;
@@ -28,6 +29,10 @@ const StyledSection = styled.div`
   }
 
   text-align: center;
+
+  ${mobileLandscape} {
+    padding: 30px;
+  }
 `;
 
 export default StyledSection;

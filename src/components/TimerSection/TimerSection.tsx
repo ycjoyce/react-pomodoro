@@ -4,6 +4,7 @@ import SectionEmpty from "../SectionEmpty/SectionEmpty";
 import TaskTimer, { TaskTimerProps } from "../TaskTimer/TaskTimer";
 import DoneModal, { DoneModalProps } from "../DoneModal/DoneModal";
 import { RingtoneProps } from "../Ringtone/Ringtone";
+import StyledTimerSection from "./TimerSection.style";
 
 export interface TimerSectionProps {
   task?: Task;
@@ -55,7 +56,7 @@ const TimerSection: FC<TimerSectionProps> = ({
 
   return (
     <>
-      <div>
+      <StyledTimerSection>
         {task ? (
           <TaskTimer
             {...task}
@@ -68,7 +69,7 @@ const TimerSection: FC<TimerSectionProps> = ({
         ) : (
           <SectionEmpty />
         )}
-      </div>
+      </StyledTimerSection>
 
       {modal && (
         <DoneModal
