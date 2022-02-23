@@ -5,6 +5,11 @@ export interface TimerProps {
   remainingTime?: number; // 單位：秒
 }
 
+/**
+ * 將秒數轉為時間字串
+ * @param time 秒數
+ * @returns 時間字串，如 01:42:33
+ */
 export const formatTime = (time: number): string => {
   let convertTime = time;
   if (time < 0) {

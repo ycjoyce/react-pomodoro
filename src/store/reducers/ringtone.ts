@@ -33,6 +33,9 @@ const initialState: RingtoneState = {
   },
 };
 
+/**
+ * 取得所有鈴聲資料
+ */
 export const fetchRingtones = createAsyncThunk(
   "ringtones/fetchRingtones",
   async () => {
@@ -57,14 +60,12 @@ export const fetchRingtones = createAsyncThunk(
   }
 );
 
-export interface InputData {
-  type: WorkType;
-  id: string;
-}
-
+/**
+ * 儲存使用者選擇鈴聲
+ */
 export const saveCheckedRingtone = createAsyncThunk(
   "ringtones/saveCheckedRingtone",
-  async ({ type, id }: InputData) => {
+  async ({ type, id }: { type: WorkType; id: string }) => {
     try {
       const response = await connect({
         path: "/ringtones/me",
@@ -82,6 +83,11 @@ export const ringtoneSlice = createSlice({
   name: "ringtones",
   initialState,
   reducers: {
+    /**
+     * 設定使用者使用鈴聲
+     * @param state
+     * @param action
+     */
     check(state, action) {
       state.checked = {
         ...state.checked,

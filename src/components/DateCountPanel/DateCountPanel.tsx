@@ -6,11 +6,10 @@ import { dateKey } from "../../utils/convert";
 export interface DateCountPanelProps {
   today?: Date;
   getTomato: (date: Date) => Promise<number>;
-  // getTomato: (date: Date) => number;
 }
 
 /**
- * 取得與初始日期間隔指定天數的date
+ * 取得與初始日期間隔指定天數的 date
  * @param origianl 初始的 date
  * @param day 要取得間隔幾天的 date
  * @returns
@@ -46,11 +45,16 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
   today = new Date(),
   getTomato,
 }) => {
+  // 目標 date 這週每日的紀錄數量
   const [tomatoAmounts, setTomatoAmounts] = useState<{
     [date: string]: number;
   }>({});
 
   useEffect(() => {
+    /**
+     * 取得並設定目標 date 的紀錄數量
+     * @param date
+     */
     const setTomato = async (date: Date) => {
       const count = await getTomato(date);
       setTomatoAmounts((original) => {
@@ -61,6 +65,7 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
       });
     };
 
+    // 取得並設定目標日那週每日的紀錄數量
     getWeekDates(today).forEach((date) => {
       setTomato(date);
     });
@@ -76,7 +81,7 @@ const DateCountPanel: FC<DateCountPanelProps> = ({
         <DateCountItem
           date={date}
           tomatoAmount={tomatoAmounts[dateKey(date)] || 0}
-          key={date.toLocaleDateString()}
+          key={dateKey(date)}
         />
       );
     });

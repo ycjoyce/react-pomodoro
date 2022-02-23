@@ -19,6 +19,13 @@ export interface OperateRoutesProps {
   onRedoTask?: TaskListProps["onRedo"];
 }
 
+export const paths = {
+  add: "/add",
+  list: "/list",
+  analysis: "/analysis",
+  ringtone: "/ringtone",
+};
+
 const OperateRoutes: FC<OperateRoutesProps> = ({
   tasks = [],
   ringtones = { work: [], break: [] },
@@ -30,11 +37,13 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
   onDeleteTask = () => {},
   onRedoTask = () => {},
 }) => {
+  const addNewTaskComponent = <AddNewTask onSave={onSaveNewTask} />;
+
   return (
     <Routes>
-      <Route path="/add" element={<AddNewTask onSave={onSaveNewTask} />} />
+      <Route path={paths.add} element={addNewTaskComponent} />
       <Route
-        path="/list"
+        path={paths.list}
         element={
           <TaskList
             tasks={tasks}
@@ -45,11 +54,11 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
         }
       />
       <Route
-        path="/analysis"
+        path={paths.analysis}
         element={<AnalyticsReport getTomato={getTomato} />}
       />
       <Route
-        path="/ringtone"
+        path={paths.ringtone}
         element={
           <Ringtone
             ringtones={ringtones}
@@ -58,7 +67,7 @@ const OperateRoutes: FC<OperateRoutesProps> = ({
           />
         }
       />
-      <Route path="*" element={<AddNewTask onSave={onSaveNewTask} />} />
+      <Route path="*" element={addNewTaskComponent} />
     </Routes>
   );
 };

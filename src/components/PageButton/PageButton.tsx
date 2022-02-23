@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import StyledPageButton from "./PageButton.style";
+import { paths } from "../OperateRoutes/OperateRoutes";
 
 export interface PageButtonProps {
-  page: "add" | "list" | "analysis" | "ringtone";
+  page: keyof typeof paths;
   active?: boolean;
   onClick?: () => void;
 }

@@ -19,14 +19,21 @@ import { PageButtonProps } from "../PageButton/PageButton";
 import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import StyledApp, { StyledTimer, StyledOperate } from "./App.style";
 import { WorkType } from "../Ringtone/Ringtone";
+import { paths } from "../OperateRoutes/OperateRoutes";
 
 const App: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useAppDispatch();
+
+  // 使用者登入、取得 token 及鈴聲
+  useInit();
+
   const {
     tasks,
     ringtones: { ringtones, checked: checkedRingtones },
+    // ringtones: 資料庫所有鈴聲資料
+    // checkedRingtones: 使用者選擇的鈴聲 id
   } = useAppSelector((state) => {
     return {
       token: state.token.value,
@@ -35,7 +42,16 @@ const App: FC = () => {
       ringtones: state.ringtones,
     };
   });
+
+  /**
+   * 要顯示的跳窗內容
+   * task-success: 案件儲存成功
+   * task-fail: 案件儲存失敗
+   * "": 不顯示跳窗
+   */
   const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
+
+  // 使用者選擇的鈴聲 url
   const [ringtoneSources, setRingtoneSources] = useState<
     RingtoneState["checked"]
   >({ work: "", break: "" });
@@ -54,15 +70,16 @@ const App: FC = () => {
     return tasks.filter((task) => !task.done);
   }, [tasks]);
 
-  useInit();
-
+  /**
+   * 產生操控面板的分頁按鈕 config
+   * @param page
+   * @returns
+   */
   const generatePage = (page: PageButtonProps["page"]) => ({
     page,
     active:
       // 如果 page not found 則顯示 add 頁面
-      !["/add", "/list", "/analysis", "/ringtone"].includes(
-        location.pathname
-      ) && page === "add"
+      !Object.values(paths).includes(location.pathname) && page === "add"
         ? true
         : location.pathname.substring(1) === page,
     onClick() {
@@ -91,17 +108,16 @@ const App: FC = () => {
     dispatch(updateTask({ id, completed: false }));
   };
 
-  const getTomato = useFetchRecords();
+  const handleTaskComplete = async (id: string) => {
+    await dispatch(updateTask({ id, completed: true }));
+  };
 
   const handleSelectRingtone = (type: WorkType, id: string) => {
     dispatch(saveCheckedRingtone({ type, id }));
   };
 
-  const handleTaskComplete = async (id: string) => {
-    await dispatch(updateTask({ id, completed: true }));
-  };
-
   const handleAddRecord = async (id: string, count: number) => {
+    // 新增到資料庫
     const { data: record } = await connect({
       path: "/records",
       type: "post",
@@ -110,8 +126,14 @@ const App: FC = () => {
         count,
       },
     });
+    // 更新 store
     dispatch(saveRecordOfDate({ date: dateKey(new Date()), record }));
   };
+
+  /**
+   * 取得目標日的紀錄數目的方法
+   */
+  const getTomato = useFetchRecords();
 
   return (
     <>

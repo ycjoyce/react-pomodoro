@@ -3,10 +3,11 @@ import Modal from "../Modal/Modal";
 import Button from "../Button/Button";
 import { StyledButtonGroup } from "../Button/Button.style";
 import { StyledTitle, StyledContentBox } from "../Modal/Modal.style";
+import { WorkType } from "../Ringtone/Ringtone";
 
 export interface DoneModalProps {
   root?: string;
-  type: "task" | "break";
+  type: WorkType;
   ringtone?: string;
   onBreak?: () => void;
   onTask?: () => void;
@@ -22,15 +23,15 @@ const DoneModal: FC<DoneModalProps> = ({
   <Modal root={root}>
     <StyledContentBox>
       <StyledTitle>
-        {type === "task" ? "Task Done" : "Break time is over"}
+        {type === "work" ? "Task Done" : "Break time is over"}
       </StyledTitle>
       <p>
-        {type === "task"
+        {type === "work"
           ? "You have done the task!"
           : "Would you like to start the next task?"}
       </p>
       <StyledButtonGroup>
-        {type === "task" ? (
+        {type === "work" ? (
           <>
             <Button large onClick={onBreak}>
               Take a break

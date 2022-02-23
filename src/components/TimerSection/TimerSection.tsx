@@ -20,6 +20,7 @@ const TimerSection: FC<TimerSectionProps> = ({
   onTaskComplete = () => {},
   onAddRecord = () => Promise.resolve(),
 }) => {
+  // 目前是否為休息時間
   const [breaktime, setBreaktime] = useState(false);
   const [modal, setModal] = useState<DoneModalProps["type"] | undefined>();
 
@@ -30,16 +31,22 @@ const TimerSection: FC<TimerSectionProps> = ({
       return;
     }
     // 工作結束
-    setModal("task");
+    setModal("work");
   };
 
   const handleReset = () => {};
 
+  /**
+   * 處理選擇開始休息時間的事件
+   */
   const handleBreak = () => {
     setModal(undefined);
     setBreaktime(true);
   };
 
+  /**
+   * 處理選擇繼續下個 task 的事件
+   */
   const handleTask = () => {
     setModal(undefined);
     setBreaktime(false);
@@ -67,7 +74,7 @@ const TimerSection: FC<TimerSectionProps> = ({
         <DoneModal
           root="modal-root"
           type={modal}
-          ringtone={ringtones[modal === "task" ? "work" : "break"]}
+          ringtone={ringtones[modal]}
           onBreak={handleBreak}
           onTask={handleTask}
         />

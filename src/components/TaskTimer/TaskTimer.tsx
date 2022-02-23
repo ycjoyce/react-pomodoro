@@ -22,52 +22,48 @@ const TaskTimer: FC<TaskTimerProps> = ({
   id,
   title,
   recordLength,
-  recordCompletedNumber = 0,
   tomatoUnitTime,
   breaktime = false,
   onReset = () => {},
   onComplete = () => {},
   onAddRecord = () => {},
 }) => {
-  //   const [curCompletedNumber, setCurCompletedNumber] = useState(
-  //     recordCompletedNumber
-  //   );
-  //
-  //   const [passedTime, setPassedTime] = useState(
-  //     recordCompletedNumber * tomatoUnitTime
-  //   );
-
+  // 目前經過了幾個 tomato unit time
   const [curCompletedNumber, setCurCompletedNumber] = useState(0);
-
+  // 目前經過時間
   const [passedTime, setPassedTime] = useState(0);
-
+  // 目前執行的是哪一個按鈕
   const [activeOperate, setActiveOperate] =
     useState<PlayButtonProps["operate"]>();
 
   const timer: { current: NodeJS.Timeout | null } = useRef(null);
 
   const handleStart = () => {
+    // 如果目前已經在執行 start，不要重複執行
     if (activeOperate === "start") {
       return;
     }
-
+    // 設定執行狀態為 start，並設定計時器
     setActiveOperate("start");
     setPassedTime((t) => t + 1);
-
     timer.current = setInterval(() => {
       setPassedTime((t) => t + 1);
     }, 1000);
   };
 
   const handlePause = () => {
+    // 如果目前已經在執行 pause，不要重複執行
     if (activeOperate === "pause") {
       return;
     }
-
+    // 設定執行狀態為 pause，並清除計時器
     setActiveOperate("pause");
     clearInterval(timer.current as NodeJS.Timeout);
   };
 
+  /**
+   * 清除計時器及相關狀態
+   */
   const clearTimer = () => {
     setActiveOperate(undefined);
     clearInterval(timer.current as NodeJS.Timeout);

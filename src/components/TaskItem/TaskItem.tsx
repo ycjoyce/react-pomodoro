@@ -7,7 +7,7 @@ import StyledTaskItem from "./TaskItem.style";
 export interface Task {
   id: string;
   title: string;
-  recordLength: number; // 記錄的番茄數量
+  recordLength: number; // 儲存的番茄數量
   recordCompletedNumber?: number;
   done?: boolean;
 }
@@ -20,7 +20,7 @@ export interface TaskMethods {
 
 export interface TaskItemProps extends Task, TaskMethods {
   opened?: boolean;
-  tomatoAmount?: number; // 編輯的番茄數量
+  tomatoAmount?: number; // 目前編輯的番茄數量
   onToggle?: (toOpen: boolean) => void;
 }
 
@@ -37,7 +37,9 @@ const TaskItem: FC<TaskItemProps> = ({
   onDelete = () => {},
   onRedo = () => {},
 }) => {
+  // 目前編輯的 title
   const [taskTitle, setTaskTitle] = useState(title);
+  // 目前編輯的番前數量
   const [selectedTomato, setSelectedTomato] = useState(tomatoAmount);
 
   const handleToggle = () => {

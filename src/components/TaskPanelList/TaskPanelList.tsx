@@ -14,6 +14,7 @@ const TaskPanelList: FC<TaskPanelListProps> = ({
   onDelete = () => {},
   onRedo = () => {},
 }) => {
+  // 目前開啟的項目的 id
   const [openedItem, setOpenedItem] = useState("");
 
   const renderItems = (contents: TaskItemProps[]) => {

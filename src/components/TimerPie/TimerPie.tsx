@@ -15,21 +15,25 @@ const TimerPie: FC<TimerPieProps> = ({
   passedTime,
   primary = true,
 }) => {
+  // 經過轉換的 totalTime
   const [convertTotalTime, setConvertTotalTime] = useState(totalTime);
+  // 經過轉換的 passedTime
   const [convertPassedTime, setConvertPassedTime] = useState(passedTime);
-  const [remaingTime, setRemainingTime] = useState(totalTime - passedTime);
+  // pie 旋轉的角度
   const [degree, setDegree] = useState((passedTime / totalTime) * 360);
 
   useEffect(() => {
+    // 如果 props 傳進來的為負值，則設為 0
     setConvertTotalTime(totalTime < 0 ? 0 : totalTime);
     setConvertPassedTime(passedTime < 0 ? 0 : passedTime);
+    // 如果 props 傳進來的 passedTime 大於 totalTime，
+    // 則將經過轉換的 passedTime 設為 totalTime
     if (passedTime > totalTime) {
       setConvertPassedTime(totalTime);
     }
   }, [totalTime, passedTime]);
 
   useEffect(() => {
-    setRemainingTime(convertTotalTime - convertPassedTime);
     setDegree((convertPassedTime / convertTotalTime) * 360);
   }, [convertTotalTime, convertPassedTime]);
 
@@ -39,7 +43,7 @@ const TimerPie: FC<TimerPieProps> = ({
       color={primary ? theme.color.primary : theme.color.emphasize}
     >
       <StyledTimerBox>
-        <Timer remainingTime={remaingTime} />
+        <Timer remainingTime={convertTotalTime - convertPassedTime} />
       </StyledTimerBox>
     </Pie>
   );

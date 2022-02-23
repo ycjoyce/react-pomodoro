@@ -26,6 +26,9 @@ interface InputData {
   completed?: boolean;
 }
 
+/**
+ * 建立案件
+ */
 export const createTask = createAsyncThunk(
   "tasks/createTask",
   async ({ title, length }: InputData) => {
@@ -42,6 +45,9 @@ export const createTask = createAsyncThunk(
   }
 );
 
+/**
+ * 更新案件
+ */
 export const updateTask = createAsyncThunk(
   "tasks/updateTask",
   async ({ id, title, length, completed }: InputData) => {
@@ -59,6 +65,9 @@ export const updateTask = createAsyncThunk(
   }
 );
 
+/**
+ * 移除案件
+ */
 export const removeTask = createAsyncThunk(
   "tasks/removeTask",
   async (id: string) => {
@@ -74,6 +83,11 @@ export const taskSlice = createSlice({
   name: "tasks",
   initialState,
   reducers: {
+    /**
+     * 儲存案件
+     * @param state
+     * @param action
+     */
     save(state, action: PayloadAction<Task>) {
       state.value = state.value.concat(action.payload);
     },

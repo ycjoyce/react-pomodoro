@@ -22,6 +22,11 @@ export const weekdayMap: { [idx: number]: string } = {
   6: "SAT",
 };
 
+/**
+ * 取得日期字串
+ * @param date
+ * @returns 日期字串，如 2/23
+ */
 export const getDateString = (date: Date) => {
   const month = date.getMonth() + 1;
   const day = date.getDate();

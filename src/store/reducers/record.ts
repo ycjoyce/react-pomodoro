@@ -17,6 +17,16 @@ interface RecordState {
   error: any;
 }
 
+const initialState: RecordState = {
+  dates: {},
+  loading: "idle",
+  currentRequestId: undefined,
+  error: null,
+};
+
+/**
+ * 取得指定日期的紀錄
+ */
 export const fetchRecordsOfDate = createAsyncThunk(
   "records/fetchRecordsOfDate",
   async (date: Date, { getState, requestId }) => {
@@ -39,17 +49,15 @@ export const fetchRecordsOfDate = createAsyncThunk(
   }
 );
 
-const initialState: RecordState = {
-  dates: {},
-  loading: "idle",
-  currentRequestId: undefined,
-  error: null,
-};
-
 export const recordSlice = createSlice({
   name: "records",
   initialState,
   reducers: {
+    /**
+     * 儲存紀錄至指定日期
+     * @param state
+     * @param action
+     */
     saveRecordOfDate(
       state,
       action: PayloadAction<{ date: string; record: Record }>

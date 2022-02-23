@@ -10,7 +10,7 @@ const Template: Story<DoneModalProps> = (args) => <DoneModal {...args} />;
 
 export const Task = Template.bind({});
 Task.args = {
-  type: "task",
+  type: "work",
 };
 
 export const Break = Template.bind({});

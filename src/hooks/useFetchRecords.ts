@@ -5,20 +5,29 @@ import { dateKey } from "../utils/convert";
 
 const useFetchRecords = () => {
   const dispatch = useAppDispatch();
-  const token = useAppSelector((state) => state.token.value);
-  const records = useAppSelector((state) => state.records.dates);
+  const { token, records } = useAppSelector((state) => ({
+    token: state.token.value,
+    records: state.records.dates,
+  }));
 
+  /**
+   * 計算紀錄總和
+   * @param data
+   * @returns
+   */
   const sum = (data: Record[] = []) => {
-    let count = 0;
-    data.forEach((record) => (count += record.count));
-    return count;
+    return data.reduce((a, e) => (a += e.count), 0);
   };
 
+  /**
+   * 計算指定日期的紀錄總和
+   */
   const countRecordsOfDate = useCallback(
     async (date: Date) => {
       if (!token) {
         return 0;
       }
+      // 如果還沒有這一天的紀錄，就先 fetch 這天的紀錄資料
       if (!records[dateKey(date)]) {
         dispatch(fetchRecordsOfDate(date));
       }

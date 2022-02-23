@@ -22,6 +22,11 @@ const AnalyticsReport: FC<AnalyticsReportProps> = ({ getTomato }) => {
   const [todayCount, setTodayCount] = useState(0);
   const [weekCount, setWeekCount] = useState(0);
 
+  /**
+   * 取得目標日那一週的日期字串，例如 2/20-2/26
+   * @param targetDate 目標日
+   * @returns
+   */
   const getWeekString = (targetDate: Date) => {
     const weekDates = getWeekDates(targetDate);
     return `${getDateString(weekDates[0])}-${getDateString(weekDates[6])}`;
@@ -47,9 +52,12 @@ const AnalyticsReport: FC<AnalyticsReportProps> = ({ getTomato }) => {
       return counts.reduce((a, e) => (a += e));
     };
 
+    // 設定當日的紀錄
     getTomato(today).then((count) => {
       setTodayCount(count);
     });
+
+    // 設定當週的紀錄
     getWeekCount(today).then((count) => setWeekCount(count));
   }, [getTomato, today]);
 
