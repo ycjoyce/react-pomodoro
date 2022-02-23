@@ -54,6 +54,7 @@ const TaskItem: FC<TaskItemProps> = ({
 
   const handleSave = () => {
     onSave(id, taskTitle, selectedTomato);
+    handleToggle();
   };
 
   const handleDelete = () => {

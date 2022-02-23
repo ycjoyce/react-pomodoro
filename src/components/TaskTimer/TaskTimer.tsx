@@ -15,9 +15,11 @@ export interface TaskTimerProps extends Task {
   breaktime?: boolean;
   onReset?: () => void;
   onComplete?: () => void;
+  onAddRecord?: (id: string, count: number) => Promise<void>;
 }
 
 const TaskTimer: FC<TaskTimerProps> = ({
+  id,
   title,
   recordLength,
   recordCompletedNumber = 0,
@@ -25,14 +27,19 @@ const TaskTimer: FC<TaskTimerProps> = ({
   breaktime = false,
   onReset = () => {},
   onComplete = () => {},
+  onAddRecord = () => {},
 }) => {
-  const [curCompletedNumber, setCurCompletedNumber] = useState(
-    recordCompletedNumber
-  );
+  //   const [curCompletedNumber, setCurCompletedNumber] = useState(
+  //     recordCompletedNumber
+  //   );
+  //
+  //   const [passedTime, setPassedTime] = useState(
+  //     recordCompletedNumber * tomatoUnitTime
+  //   );
 
-  const [passedTime, setPassedTime] = useState(
-    recordCompletedNumber * tomatoUnitTime
-  );
+  const [curCompletedNumber, setCurCompletedNumber] = useState(0);
+
+  const [passedTime, setPassedTime] = useState(0);
 
   const [activeOperate, setActiveOperate] =
     useState<PlayButtonProps["operate"]>();
@@ -82,18 +89,21 @@ const TaskTimer: FC<TaskTimerProps> = ({
     // 每當時間經過一個 unit time 就增加一個 completed number
     if (!(passedTime - curCompletedNumber * tomatoUnitTime < tomatoUnitTime)) {
       setCurCompletedNumber((n) => n + 1);
+      onAddRecord(id, 1);
     }
     // 時間走完
     if (!(passedTime < tomatoUnitTime * recordLength)) {
       handleComplete();
     }
   }, [
+    id,
     passedTime,
     curCompletedNumber,
     tomatoUnitTime,
     recordLength,
     handleComplete,
     onComplete,
+    onAddRecord,
   ]);
 
   const renderPlayButtons = (

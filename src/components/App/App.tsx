@@ -1,10 +1,16 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useMemo, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import useInit from "../../hooks/useInit";
 import useFetchRecords from "../../hooks/useFetchRecords";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { createTask, updateTask, removeTask } from "../../store/reducers/task";
-import { saveCheckedRingtone } from "../../store/reducers/ringtone";
+import {
+  saveCheckedRingtone,
+  RingtoneState,
+} from "../../store/reducers/ringtone";
+import { saveRecordOfDate } from "../../store/reducers/record";
+import connect from "../../apis/connect";
+import { dateKey } from "../../utils/convert";
 import theme from "../../styles/abstracts/theme";
 import TimerSection from "../TimerSection/TimerSection";
 import OperateSection from "../OperateSection/OperateSection";
@@ -30,6 +36,23 @@ const App: FC = () => {
     };
   });
   const [modal, setModal] = useState<"task-success" | "task-fail" | "">("");
+  const [ringtoneSources, setRingtoneSources] = useState<
+    RingtoneState["checked"]
+  >({ work: "", break: "" });
+
+  useEffect(() => {
+    const work =
+      ringtones.work.find((r) => r.id === checkedRingtones.work)?.ringtone ||
+      "";
+    const breaktime =
+      ringtones.break.find((r) => r.id === checkedRingtones.break)?.ringtone ||
+      "";
+    setRingtoneSources({ work, break: breaktime });
+  }, [checkedRingtones, ringtones]);
+
+  const incompletedTasks = useMemo(() => {
+    return tasks.filter((task) => !task.done);
+  }, [tasks]);
 
   useInit();
 
@@ -74,11 +97,33 @@ const App: FC = () => {
     dispatch(saveCheckedRingtone({ type, id }));
   };
 
+  const handleTaskComplete = async (id: string) => {
+    await dispatch(updateTask({ id, completed: true }));
+  };
+
+  const handleAddRecord = async (id: string, count: number) => {
+    const { data: record } = await connect({
+      path: "/records",
+      type: "post",
+      data: {
+        task: id,
+        count,
+      },
+    });
+    dispatch(saveRecordOfDate({ date: dateKey(new Date()), record }));
+  };
+
   return (
     <>
       <StyledApp>
         <StyledTimer backgroundColor="#eaeaea">
-          <TimerSection />
+          <TimerSection
+            tomatoUnitTime={5}
+            task={incompletedTasks[0]}
+            ringtones={ringtoneSources}
+            onTaskComplete={handleTaskComplete}
+            onAddRecord={handleAddRecord}
+          />
         </StyledTimer>
 
         <StyledOperate backgroundColor={theme.color.black}>
@@ -107,6 +152,7 @@ const App: FC = () => {
 
       {modal.startsWith("task") && (
         <AddTaskModal
+          root="modal-root"
           success={modal === "task-success"}
           onClose={() => setModal("")}
         />

@@ -1,19 +1,24 @@
 import React, { FC, useState } from "react";
 import { Task } from "../TaskItem/TaskItem";
 import SectionEmpty from "../SectionEmpty/SectionEmpty";
-import TaskTimer from "../TaskTimer/TaskTimer";
+import TaskTimer, { TaskTimerProps } from "../TaskTimer/TaskTimer";
 import DoneModal, { DoneModalProps } from "../DoneModal/DoneModal";
+import { RingtoneProps } from "../Ringtone/Ringtone";
 
 export interface TimerSectionProps {
   task?: Task;
   tomatoUnitTime?: number; // 單位：秒
-  onTaskComplete?: () => {};
+  ringtones?: RingtoneProps["checkedItem"];
+  onTaskComplete?: (id: string) => Promise<void>;
+  onAddRecord?: TaskTimerProps["onAddRecord"];
 }
 
 const TimerSection: FC<TimerSectionProps> = ({
   task,
   tomatoUnitTime = 60,
+  ringtones = { work: "", break: "" },
   onTaskComplete = () => {},
+  onAddRecord = () => Promise.resolve(),
 }) => {
   const [breaktime, setBreaktime] = useState(false);
   const [modal, setModal] = useState<DoneModalProps["type"] | undefined>();
@@ -38,7 +43,7 @@ const TimerSection: FC<TimerSectionProps> = ({
   const handleTask = () => {
     setModal(undefined);
     setBreaktime(false);
-    onTaskComplete(); // 當前task完成，繼續下一個task
+    onTaskComplete(task?.id || ""); // 當前task完成，繼續下一個task
   };
 
   return (
@@ -51,6 +56,7 @@ const TimerSection: FC<TimerSectionProps> = ({
             breaktime={breaktime}
             onComplete={handleComplete}
             onReset={handleReset}
+            onAddRecord={onAddRecord}
           />
         ) : (
           <SectionEmpty />
@@ -58,7 +64,13 @@ const TimerSection: FC<TimerSectionProps> = ({
       </div>
 
       {modal && (
-        <DoneModal type={modal} onBreak={handleBreak} onTask={handleTask} />
+        <DoneModal
+          root="modal-root"
+          type={modal}
+          ringtone={ringtones[modal === "task" ? "work" : "break"]}
+          onBreak={handleBreak}
+          onTask={handleTask}
+        />
       )}
     </>
   );

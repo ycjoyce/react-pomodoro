@@ -34,23 +34,18 @@ const Modal: FC<ModalProps> = ({ root, children, onClose = () => {} }) => {
     onClose();
   };
 
-  if (root) {
-    return createPortal(
-      <StyledModal>
-        <StyledModalBackground onClick={handleClickOutside}>
-          <StyledModalContent>{children}</StyledModalContent>
-        </StyledModalBackground>
-      </StyledModal>,
-      el.current
-    );
-  }
-
-  return (
+  const modalComponent = (
     <StyledModal>
       <StyledModalBackground onClick={handleClickOutside} />
       <StyledModalContent>{children}</StyledModalContent>
     </StyledModal>
   );
+
+  if (root) {
+    return createPortal(modalComponent, el.current);
+  }
+
+  return modalComponent;
 };
 
 export default Modal;

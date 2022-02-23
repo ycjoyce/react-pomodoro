@@ -17,15 +17,16 @@ const TaskPanelList: FC<TaskPanelListProps> = ({
   const [openedItem, setOpenedItem] = useState("");
 
   const renderItems = (contents: TaskItemProps[]) => {
-    const handleToggle = (title: string, toOpen: boolean) => {
-      setOpenedItem(toOpen ? title : "");
+    const handleToggle = (id: string, toOpen: boolean) => {
+      setOpenedItem(toOpen ? id : "");
     };
+
     return contents.map((item) => (
       <PanelItem key={item.id}>
         <TaskItem
           {...item}
-          opened={item.title === openedItem}
-          onToggle={(toOpen) => handleToggle(item.title, toOpen)}
+          opened={item.id === openedItem}
+          onToggle={(toOpen) => handleToggle(item.id, toOpen)}
           onSave={onSave}
           onDelete={onDelete}
           onRedo={onRedo}

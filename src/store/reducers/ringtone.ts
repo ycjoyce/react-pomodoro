@@ -4,7 +4,7 @@ import { WorkType } from "../../components/Ringtone/Ringtone";
 import { Ringtone } from "../../components/RintoneItem/RintoneItem";
 import { convertRingtone } from "../../utils/convert";
 
-interface RingtoneState {
+export interface RingtoneState {
   ringtones: {
     work: Ringtone[];
     break: Ringtone[];
@@ -57,14 +57,14 @@ export const fetchRingtones = createAsyncThunk(
   }
 );
 
-export interface inputData {
+export interface InputData {
   type: WorkType;
   id: string;
 }
 
 export const saveCheckedRingtone = createAsyncThunk(
   "ringtones/saveCheckedRingtone",
-  async ({ type, id }: inputData) => {
+  async ({ type, id }: InputData) => {
     try {
       const response = await connect({
         path: "/ringtones/me",

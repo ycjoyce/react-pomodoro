@@ -5,16 +5,18 @@ import { StyledContentBox, StyledTitle } from "../Modal/Modal.style";
 import { StyledButtonGroup } from "../Button/Button.style";
 
 export interface AddTaskModalProps {
+  root?: string;
   success?: boolean;
   onClose?: () => void;
 }
 
 const AddTaskModal: FC<AddTaskModalProps> = ({
+  root,
   success = true,
   onClose = () => {},
 }) => {
   return (
-    <Modal onClose={onClose}>
+    <Modal root={root} onClose={onClose}>
       <StyledContentBox>
         <StyledTitle>{success ? "Success" : "Error"}</StyledTitle>
         <p>

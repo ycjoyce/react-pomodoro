@@ -2,7 +2,6 @@ import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import connect from "../../apis/connect";
 import { Task } from "../../components/TaskItem/TaskItem";
 import { convertTask } from "../../utils/convert";
-import { Record } from "./record";
 
 export interface FetchedTask {
   _id: string;
@@ -10,7 +9,6 @@ export interface FetchedTask {
   completed: boolean;
   length: number;
   owner: string;
-  records: Record[];
 }
 
 interface TasksState {
@@ -21,7 +19,7 @@ const initialState: TasksState = {
   value: [],
 };
 
-interface inputData {
+interface InputData {
   id?: string;
   title?: string;
   length?: number;
@@ -30,7 +28,7 @@ interface inputData {
 
 export const createTask = createAsyncThunk(
   "tasks/createTask",
-  async ({ title, length }: inputData) => {
+  async ({ title, length }: InputData) => {
     const response = await connect({
       path: "/tasks",
       type: "post",
@@ -46,7 +44,7 @@ export const createTask = createAsyncThunk(
 
 export const updateTask = createAsyncThunk(
   "tasks/updateTask",
-  async ({ id, title, length, completed }: inputData) => {
+  async ({ id, title, length, completed }: InputData) => {
     const response = await connect({
       path: `/tasks/${id}`,
       type: "patch",

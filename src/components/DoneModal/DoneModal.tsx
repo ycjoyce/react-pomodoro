@@ -5,6 +5,7 @@ import { StyledButtonGroup } from "../Button/Button.style";
 import { StyledTitle, StyledContentBox } from "../Modal/Modal.style";
 
 export interface DoneModalProps {
+  root?: string;
   type: "task" | "break";
   ringtone?: string;
   onBreak?: () => void;
@@ -12,12 +13,13 @@ export interface DoneModalProps {
 }
 
 const DoneModal: FC<DoneModalProps> = ({
+  root,
   type,
   ringtone,
   onBreak = () => {},
   onTask = () => {},
 }) => (
-  <Modal>
+  <Modal root={root}>
     <StyledContentBox>
       <StyledTitle>
         {type === "task" ? "Task Done" : "Break time is over"}

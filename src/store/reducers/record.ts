@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import connect from "../../apis/connect";
 import { dateKey } from "../../utils/convert";
 
@@ -50,10 +50,20 @@ export const recordSlice = createSlice({
   name: "records",
   initialState,
   reducers: {
-    setDate(state, action) {
+    saveRecordOfDate(
+      state,
+      action: PayloadAction<{ date: string; record: Record }>
+    ) {
+      const { date, record } = action.payload;
+      let records: Record[] = [];
+
+      if (state.dates[date]) {
+        records = records.concat(state.dates[date]);
+      }
+
       state.dates = {
         ...state.dates,
-        [dateKey(action.payload.date)]: [],
+        [date]: [...records, record],
       };
     },
   },
@@ -92,5 +102,7 @@ export const recordSlice = createSlice({
       });
   },
 });
+
+export const { saveRecordOfDate } = recordSlice.actions;
 
 export default recordSlice.reducer;
