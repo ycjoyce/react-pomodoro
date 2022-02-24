@@ -14,6 +14,12 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
+      - name: Create env file
+        run: |
+          touch .env
+          echo PUBLIC_URL="/react-pomodoro" >> .env
+          echo REACT_APP_API_URL="https://ycjoyce-react-pomodoro.herokuapp.com" >> .env
+          cat .env
       - name: Build
         uses: borales/actions-yarn@v2.3.0
         with:
