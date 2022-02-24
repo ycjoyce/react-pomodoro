@@ -11,7 +11,7 @@ import "./styles/all.css";
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename={process.env.NODE_ENV === "production" ? "/react-pomodoro" : ""}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
