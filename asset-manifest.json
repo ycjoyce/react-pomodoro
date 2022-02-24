@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-pomodoro/static/css/main.d11ce1f4.css",
-    "main.js": "/react-pomodoro/static/js/main.8711e26e.js",
+    "main.js": "/react-pomodoro/static/js/main.89c77267.js",
     "static/media/about01-220215-01.svg": "/react-pomodoro/static/media/about01-220215-01.6c014a7188e1892615e4.svg",
     "static/media/ringtone_red.svg": "/react-pomodoro/static/media/ringtone_red.dd27db36b0fa005c6eda.svg",
     "static/media/ringtone_white.svg": "/react-pomodoro/static/media/ringtone_white.a473de232b62fd1c6212.svg",
@@ -32,10 +32,10 @@
     "static/media/stop_gray.svg": "/react-pomodoro/static/media/stop_gray.25ce7f98f6d65a37e7c4.svg",
     "static/media/arrow_forward-24px.svg": "/react-pomodoro/static/media/arrow_forward-24px.195a2b128894434e856a.svg",
     "main.d11ce1f4.css.map": "/react-pomodoro/static/css/main.d11ce1f4.css.map",
-    "main.8711e26e.js.map": "/react-pomodoro/static/js/main.8711e26e.js.map"
+    "main.89c77267.js.map": "/react-pomodoro/static/js/main.89c77267.js.map"
   },
   "entrypoints": [
     "static/css/main.d11ce1f4.css",
-    "static/js/main.8711e26e.js"
+    "static/js/main.89c77267.js"
   ]
 }
