@@ -85,7 +85,9 @@ const TaskTimer: FC<TaskTimerProps> = ({
     // 每當時間經過一個 unit time 就增加一個 completed number
     if (!(passedTime - curCompletedNumber * tomatoUnitTime < tomatoUnitTime)) {
       setCurCompletedNumber((n) => n + 1);
-      onAddRecord(id, 1);
+      if (!breaktime) {
+        onAddRecord(id, 1);
+      }
     }
     // 時間走完
     if (!(passedTime < tomatoUnitTime * recordLength)) {
@@ -93,6 +95,7 @@ const TaskTimer: FC<TaskTimerProps> = ({
     }
   }, [
     id,
+    breaktime,
     passedTime,
     curCompletedNumber,
     tomatoUnitTime,
