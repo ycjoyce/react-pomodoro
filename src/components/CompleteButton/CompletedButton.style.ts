@@ -6,6 +6,7 @@ const StyledCompletedButton = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: ${({ theme }) => theme.color.black};
 
   &::before {
     content: "";
