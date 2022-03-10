@@ -10,6 +10,7 @@ const StyledAudioButton = styled.button<AudioButtonProps>`
   border: 2px solid ${({ theme }) => theme.color.light};
   border-radius: 100%;
   background-color: transparent;
+  display: inline-block;
   width: 20px;
   height: 20px;
   cursor: pointer;
