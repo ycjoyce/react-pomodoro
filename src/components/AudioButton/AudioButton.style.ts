@@ -15,9 +15,10 @@ const StyledAudioButton = styled.button<AudioButtonProps>`
   height: 20px;
   cursor: pointer;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url(${({ playing }) => (playing ? pauseIcon : playIcon)});
+  padding: 10px;
 `;
 
 export default StyledAudioButton;

@@ -5,6 +5,7 @@ const doneIconWidth = 20;
 
 export const StyledTaskItemTitleContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const StyledTaskItemTitleBox = styled.div`
@@ -21,8 +22,6 @@ export const StyledTaskItemTitle = styled.p`
 
 export const StyledTaskItemButton = styled.div`
   flex: 0 0 auto;
-  width: 20px;
-  border: 1px solid yellow;
 `;
 
 export const StyledTaskItemDoneBox = styled.div`

@@ -17,6 +17,7 @@ const StyledTomatoButton = styled.button<Props>`
   background-repeat: no-repeat;
   background-image: url(${({ active }) =>
     active ? coloredTomato : grayTomato});
+  background-position: center;
 `;
 
 export default StyledTomatoButton;

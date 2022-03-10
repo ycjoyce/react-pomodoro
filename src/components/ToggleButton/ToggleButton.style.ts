@@ -34,6 +34,7 @@ export const StyledPrimaryButton = styled(StyledToggleButton)`
 export const StyledSecondaryButton = styled(StyledToggleButton)`
   width: 40px;
   height: 40px;
+  font-size: 1.5rem;
   transform: rotate(${({ opened }) => (opened ? "90deg" : "0deg")});
   color: ${({ theme }) => theme.color.light};
 `;
