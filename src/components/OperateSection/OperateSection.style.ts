@@ -99,6 +99,7 @@ export const StyledOperateBox = styled.div<{ opened?: boolean }>`
   ${mobile} {
     width: 100%;
     height: calc(100vh - ${barWidth}px);
+    height: calc(var(--vh, 1vh) * 100 - ${barWidth}px);
 
     ${({ opened }) => {
       if (!opened) {

@@ -26,6 +26,11 @@ const App: FC = () => {
   const location = useLocation();
   const dispatch = useAppDispatch();
 
+  useEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }, []);
+
   // 使用者登入、取得 token 及鈴聲
   useInit();
 

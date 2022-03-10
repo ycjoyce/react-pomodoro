@@ -5,6 +5,7 @@ import { mobile, mobileLandscape } from "../../styles/abstracts/mixin";
 const StyledApp = styled.div`
   display: flex;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
 `;
 
@@ -21,6 +22,7 @@ export const StyledTimer = styled(StyledSection)`
 
   ${mobileLandscape} {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   ${mobile} {
