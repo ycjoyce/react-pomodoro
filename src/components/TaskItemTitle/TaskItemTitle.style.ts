@@ -21,6 +21,8 @@ export const StyledTaskItemTitle = styled.p`
 
 export const StyledTaskItemButton = styled.div`
   flex: 0 0 auto;
+  width: 20px;
+  border: 1px solid yellow;
 `;
 
 export const StyledTaskItemDoneBox = styled.div`

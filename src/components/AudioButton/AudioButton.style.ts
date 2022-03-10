@@ -11,8 +11,8 @@ const StyledAudioButton = styled.button<AudioButtonProps>`
   border-radius: 100%;
   background-color: transparent;
   display: inline-block;
-  width: 20px !important;
-  height: 20px !important;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   background-position: center;
   background-size: cover;

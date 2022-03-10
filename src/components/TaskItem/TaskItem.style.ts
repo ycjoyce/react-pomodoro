@@ -10,7 +10,7 @@ const StyledTaskItem = styled.div`
   }
 
   & ${StyledTaskItemOperate} {
-    padding: 20px 40px;
+    padding: 20px;
   }
 `;
 
