@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-pomodoro/static/css/main.d11ce1f4.css",
-    "main.js": "/react-pomodoro/static/js/main.89c77267.js",
+    "main.css": "/react-pomodoro/static/css/main.571ec87a.css",
+    "main.js": "/react-pomodoro/static/js/main.4df3cbc9.js",
     "static/media/about01-220215-01.svg": "/react-pomodoro/static/media/about01-220215-01.6c014a7188e1892615e4.svg",
     "static/media/ringtone_red.svg": "/react-pomodoro/static/media/ringtone_red.dd27db36b0fa005c6eda.svg",
     "static/media/ringtone_white.svg": "/react-pomodoro/static/media/ringtone_white.a473de232b62fd1c6212.svg",
     "static/media/analysis_red.svg": "/react-pomodoro/static/media/analysis_red.b8c5ef2c28529c57d4a8.svg",
     "static/media/analysis_white.svg": "/react-pomodoro/static/media/analysis_white.693a93bdee9d062874fd.svg",
+    "index.html": "/react-pomodoro/index.html",
     "static/media/add_red.svg": "/react-pomodoro/static/media/add_red.d0baca7f42f47d6745e0.svg",
     "static/media/add_white.svg": "/react-pomodoro/static/media/add_white.279ee54ed3f448f2746b.svg",
-    "index.html": "/react-pomodoro/index.html",
     "static/media/list_white.svg": "/react-pomodoro/static/media/list_white.fe0bc0c80c985f766267.svg",
     "static/media/reset_red.svg": "/react-pomodoro/static/media/reset_red.6ed65e112b78cc530b74.svg",
     "static/media/reset_gray.svg": "/react-pomodoro/static/media/reset_gray.43dd4e5ab5f09b190715.svg",
@@ -31,11 +31,11 @@
     "static/media/tomato_small_gray.svg": "/react-pomodoro/static/media/tomato_small_gray.10d2f549f3046f9234d8bd205e803ecb.svg",
     "static/media/stop_gray.svg": "/react-pomodoro/static/media/stop_gray.25ce7f98f6d65a37e7c4.svg",
     "static/media/arrow_forward-24px.svg": "/react-pomodoro/static/media/arrow_forward-24px.195a2b128894434e856a.svg",
-    "main.d11ce1f4.css.map": "/react-pomodoro/static/css/main.d11ce1f4.css.map",
-    "main.89c77267.js.map": "/react-pomodoro/static/js/main.89c77267.js.map"
+    "main.571ec87a.css.map": "/react-pomodoro/static/css/main.571ec87a.css.map",
+    "main.4df3cbc9.js.map": "/react-pomodoro/static/js/main.4df3cbc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d11ce1f4.css",
-    "static/js/main.89c77267.js"
+    "static/css/main.571ec87a.css",
+    "static/js/main.4df3cbc9.js"
   ]
 }
